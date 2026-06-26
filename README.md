@@ -1,125 +1,218 @@
-# university skill
+# university
+
+[![Version](https://img.shields.io/github/v/release/Drew1811266/university?label=version)](https://github.com/Drew1811266/university/releases)
+[![License](https://img.shields.io/github/license/Drew1811266/university)](LICENSE)
+[![Skill](https://img.shields.io/badge/Agent%20Skill-university-blue)](university/SKILL.md)
+
+`university` is a platform-neutral Agent Skill for university research, official-source verification, China mainland 2026 gaokao volunteer-filling research, and gaokao-to-overseas undergraduate application checks.
 
 当前版本：`0.2.0`
 
-`university` 是一个面向高校信息研究、官方来源核验和咨询报告生成的通用 AI skill。0.2 版将中国大陆 2026 高考志愿场景调整为“官方来源追踪、招生计划导入辅助、候选池过滤、防错清单、五维风险拆解、待核验项列表”，默认输出为 `研究草稿` 或 `核验草案`，不以生成可直接提交的志愿表为目标。
+这个仓库的可安装技能包是 [`university/`](university/)。用户只安装这一份 skill，就可以使用院校背景研究、高考志愿防错和高考生海外申请核验三类能力。
 
-## 跨平台定位
+## Contents
 
-这个 skill 不绑定某一个 AI 平台。`SKILL.md` 是通用指令入口，里面定义的触发范围、工作流、来源规则和输出约束可以迁移到不同 AI 助手、智能体框架或内部知识系统中使用。具体平台的调用方式、联网能力、文件读取能力、引用管理、记忆系统和数据库接口都只是适配层；如果某个平台不能联网或不能自动读取 `references/`，应让使用者提供相关 reference 内容，或先给出需要核验的官方来源清单。
+- [Why This Skill Exists](#why-this-skill-exists)
+- [What It Can Do](#what-it-can-do)
+- [What It Does Not Do](#what-it-does-not-do)
+- [Install](#install)
+- [Quick Start](#quick-start)
+- [Repository Layout](#repository-layout)
+- [Data Status](#data-status)
+- [Optional Scripts](#optional-scripts)
+- [Source Policy](#source-policy)
+- [Version](#version)
 
-## 适用场景
+## Why This Skill Exists
 
-这个 skill 适合处理以下任务：
+高校咨询最容易出错的地方，不是“缺少学校介绍”，而是把不同性质的信息混在一起：
 
-- 快速整理一所大学的学校简介、历史沿革、办学定位、校区概况和稳定优势方向。
-- 对比多所高校的背景、学科特色、地理位置和非时效性办学信息。
-- 查询本科、研究生、国际生、交换项目、专业项目等信息，并区分哪些字段需要最新官方页面核验。
-- 支持中国大陆高考志愿填报相关咨询，包括省级政策、招生计划、投档规则、位次和风险提示。
-- 支持中国高考生申请海外本科的咨询，包括申请路径、签证、资金、学历认证、专业执照和国内备选方案。
-- 生成高校研究报告、院校比较表、项目信息表、风险清单和来源证据记录。
+- 把学校官网的专业页面误当成某省当年招生计划。
+- 把往年投档位次误当成今年录取承诺。
+- 把第三方志愿工具或论坛经验当成官方规则。
+- 把海外大学 offer 误当成签证、入境、学历认证或执照资格保证。
 
-## 核心原则
+`university` 的设计目标是把这些边界固定下来：稳定背景可以用资源库辅助，招生、费用、代码、计划、签证、认证等高影响信息必须回到当年官方来源核验。
 
-`university` 的核心原则是：稳定背景可以用资源库辅助，时效信息必须回到官方最新来源。
+## What It Can Do
 
-资源库可用于学校历史、办学定位、校区概况、长期学科特色等非时效性背景。招生政策、专业是否招生、费用、截止日期、奖学金、语言要求、录取规则、签证、住宿、就业、学历认证、职业资格等字段会随年份或政策变化，不能只靠资源库下结论，必须查 2025 年及以后的官方来源；涉及 2026 高考志愿时，应优先查 2026 年官方文件，尚未发布时使用最新官方资料并标注 `待核验`。
+| Mode | Use For | Output |
+| --- | --- | --- |
+| `gaokao-cn` | 中国大陆 2026 高考志愿研究、招生计划核验、候选池过滤、五维风险拆解 | `研究草稿` / `核验草案`、候选池核验表、风险表、待核验项 |
+| `university-profile` | 大学简介、历史、办学定位、校区概况、稳定优势方向 | 学校背景摘要、来源质量提示、可复核资料路径 |
+| `gaokao-overseas` | 中国高考生申请海外本科、签证、资金、认证、住宿、安全和国内备选 | 分项核验计划、风险清单、官方来源路径 |
 
-## 主要能力
+### gaokao-cn Core Capabilities
 
-### 院校背景摘要
+- 官方来源追踪：31 个 2026 省份包用于记录政策、成绩、一分一段、招生计划和更正状态。
+- 招生计划导入辅助：支持从 CSV、网页表格、PDF 文本和 XLSX 抽取材料进入人工复核和标准化流程。
+- 候选池过滤：候选项只能来自考生所在省 2026 官方招生计划及更正，不能来自排名或院校库。
+- 五维风险拆解：报考资格、投档、专业/调剂、退档、结果可接受度分别呈现。
+- 防越权检查：通过检查也只表示材料适合更谨慎复核，不表示可直接提交或保证录取。
+- 待核验项列表：缺少当年来源、位次、选科资格、章程限制或更正检查时，必须暴露缺口。
 
-当用户询问“介绍一下某大学”“学校概况”“办学特色”“历史沿革”等问题时，skill 会先通过索引定位目标学校，再读取对应的资源库分段文件。A 级条目可以用于简洁背景摘要，B 级只能作为背景线索，C 级必须提示来源需复核。
+## What It Does Not Do
 
-### 官方来源核验
+`university` 不承诺也不生成：
 
-当问题涉及招生、政策、费用、截止日期、专业要求或其他高影响决策时，skill 会优先查找学校官网、招生办公室、研究生院、学院/项目页面、政府或考试院页面，并记录来源 URL、来源类型、适用年份、受众和证据等级。
+- 可直接提交的最终志愿表。
+- `稳录`、`保录取`、`保专业`、`一定录取` 等结论。
+- 省级正式填报系统的替代品。
+- 签证、入境、学历认证、就业权利或职业执照保证。
+- 用第三方排名、论坛、媒体汇总或经验帖支撑最终结论。
 
-### 高考志愿咨询
+高考志愿场景默认输出状态只有：
 
-对于中国大陆高考志愿场景，skill 会优先确认省份、年份、科类或选科、分数、位次、批次、目标院校/专业和风险偏好。它强调省级教育考试院是最高权威来源，阳光高考和高校招生章程只能作为辅助核验，第三方预测不能替代官方规则。
+- `研究草稿`：信息仍缺关键官方来源或只能用于研究。
+- `核验草案`：五项关键证据已覆盖，适合进入更谨慎的人工复核，但仍不是可提交志愿表。
 
-### 高考生海外申请咨询
+## Install
 
-对于中国高考生申请海外本科场景，skill 会把“大学录取”与“签证、入境、资金、学历认证、职业执照、住宿和安全”分开核验。获得 offer 不等于签证、入境、认证或未来就业资格得到保证。
+### Generic Agent Skill Install
 
-### 报告生成
-
-skill 内置报告结构和证据记录规则，可输出短问答、单校报告、多校对比表、项目信息表、风险清单和待核验事项。
-
-## 资源文件结构
-
-跨平台核心入口是 `university/SKILL.md`，其中定义了触发范围、工作流、来源规则和 reference 文件读取条件。仓库根目录 `README.md` 只用于人类阅读，不属于 skill 包运行入口。
-
-主要 reference 文件包括：
-
-- `references/university-profile-search-index.md`：院校资源库检索索引，支持中文名、英文名、简称、旧名和关键词定位。
-- `references/university-profile-library.md`：资源库字段规则、来源质量等级和维护约束。
-- `references/university-profiles-china-001-050.md` 至 `references/university-profiles-china-351-400.md`：中国高校分段背景资源库。
-- `references/university-profiles-international.md`：国际院校资源库占位与扩展入口。
-- `references/source-evidence-ledger.md`：字段级证据记录规则。
-- `references/report-schema.md`：报告、表格和轻量问答格式。
-- `references/research-workflow.md`：详细研究流程和不确定性处理。
-- `references/country-source-guide.md`：不同国家和地区的官方来源类型。
-- `references/resource-map.md`：按任务选择最小 reference 集合。
-- `references/gaokao-cn-workflow.md`、`references/gaokao-cn-output-status.md`、`references/gaokao-cn-source-authority.md`：中国大陆 2026 高考志愿工作流、输出状态和字段级来源权威规则。
-- `references/gaokao-cn-province-*-2026.yaml`：31 个省级 2026 高考状态包。
-- `references/gaokao-cn-candidate-pool.md`、`references/gaokao-cn-risk-method.md`：候选池过滤和五维风险拆解。
-- `references/gaokao-cn-submission-gates.md`、`references/gaokao-cn-submission-precheck-package.md`：防越权检查，不用于证明可提交。
-- `references/china-gaokao-overseas-study-guide.md`：高考生海外本科申请咨询规则。
-- `references/overseas-official-source-map.md`：海外教育、签证、认证、安全等官方来源地图。
-- `references/consultation-intake-profile.md`：咨询式任务的信息收集模板。
-- `references/sample-prompts.md`：样例 prompt 和期望行为。
-
-## 来源质量等级
-
-资源库使用 A/B/C 三档来源质量：
-
-- `A`：已记录明确的官方简介、概况、信息公开或教育主管页面 URL，可用于非时效性背景摘要。
-- `B`：官方主页或官方栏目可核验，但精确简介/概况页仍待补充，只能作为背景线索。
-- `C`：官网入口可达但简介页不稳定或来源不清，输出时必须提示回官网或信息公开栏目复核。
-
-无论来源质量是否为 A，资源库都不能用于招生、费用、截止日期、政策和录取风险等时效字段的最终判断。
-
-## 使用方式示例
-
-可以这样提问：
+Install the [`university/`](university/) folder as one skill directory in any Agent Skills-compatible platform.
 
 ```text
-请简要介绍浙江大学，并说明哪些信息需要另查官方最新来源。
+university/
+├── SKILL.md
+├── references/
+└── scripts/
 ```
+
+Do not split `gaokao-cn`, `university-profile`, or `gaokao-overseas` into separate skills. They are internal modes routed by `university/SKILL.md`.
+
+### Local Copy
+
+```bash
+git clone https://github.com/Drew1811266/university.git
+```
+
+Then point your agent platform at the `university/` subdirectory, or copy that folder into the platform's skills directory.
+
+Scripts are optional accelerators. If a platform cannot run scripts, the skill still works from [`SKILL.md`](university/SKILL.md), [`references/`](university/references/), and the bundled schemas.
+
+## Quick Start
+
+Ask natural-language questions. The skill routes to the right internal mode.
+
+### School Background
 
 ```text
-对比华中科技大学、西安交通大学和哈尔滨工业大学的学校背景和优势方向。
+请介绍一下浙江大学，重点看学校历史、校区和稳定优势方向。不要涉及录取判断。
 ```
+
+### Gaokao Volunteer Research
 
 ```text
-我是 2026 年广东物理类考生，想了解北京邮电大学相关专业的报考风险，需要核验哪些官方来源？
+我是 2026 年广东物理类考生，612 分，位次 28000，想看计算机或电子信息方向。
+不接受中外合作和高收费项目。请先做研究草稿，列出需要核验的官方来源和五维风险。
 ```
+
+### Uploaded Official Materials
 
 ```text
-用高考成绩申请澳大利亚本科，需要分别查哪些大学、签证和认证来源？
+我上传了某省 2026 招生专业目录、一分一段表和计划更正公告。
+请按 university 技能生成候选池核验表，不要直接生成可提交志愿表。
 ```
 
-## 维护注意事项
+### Gaokao-to-Overseas
 
-维护资源库时应遵守以下规则：
+```text
+我是中国高考生，想用高考成绩申请澳大利亚本科。
+请分别核验大学录取、签证、资金、学历认证、住宿和国内志愿备选风险。
+```
 
-- 不要凭记忆补 URL、历史、校区或政策字段。
-- 新增或升级 A 级条目时，必须核验精确官方页面 URL。
-- 不要把软科等第三方排名当作学校质量结论；分段只用于资源库覆盖范围。
-- 不要把招生、费用、截止日期、录取规则、签证、认证等时效信息写入 profile 资源库。
-- 学校发生更名、合并、转设、校区调整、办学性质变化或官网栏目迁移时，应在核验提醒中标记。
-- 对歧义简称要谨慎处理，例如“东大”“南大”等简称可能指向多所学校，必要时先向用户澄清。
+## Repository Layout
 
-## 当前覆盖情况
+```text
+.
+├── README.md
+├── LICENSE
+└── university/
+    ├── SKILL.md
+    ├── references/
+    │   ├── resource-map.md
+    │   ├── gaokao-cn-*.md / *.yaml / *.csv
+    │   ├── university-profile-*.md
+    │   ├── *schema.json
+    │   └── overseas / report / evidence references
+    └── scripts/
+        ├── validate_data.py
+        ├── run_self_test.py
+        ├── build_candidate_pool.py
+        ├── build_risk_assessment.py
+        └── import, validation, monitoring helpers
+```
 
-中国高校资源库按软科 2026 中国大学排名主榜分段，已覆盖第 1-400 名。院校库只用于学校背景摘要，不参与高考候选池生成、排序或录取风险判断。
+Important files:
 
-高考 2026 省份包已覆盖 31 个省级单位，但当前仍定位为研究和核验辅助；缺少全量专业级招生计划、考生位次、选科资格或高校章程限制时，输出必须保持 `研究草稿`。
+- [`university/SKILL.md`](university/SKILL.md): skill entrypoint and routing rules.
+- [`university/references/resource-map.md`](university/references/resource-map.md): how agents choose the smallest relevant reference set.
+- [`university/references/gaokao-cn-output-status.md`](university/references/gaokao-cn-output-status.md): `研究草稿` / `核验草案` rules.
+- [`university/references/gaokao-cn-source-authority.md`](university/references/gaokao-cn-source-authority.md): field-level official source authority.
+- [`university/references/gaokao-cn-candidate-pool.md`](university/references/gaokao-cn-candidate-pool.md): candidate-pool filtering rules.
+- [`university/references/gaokao-cn-risk-method.md`](university/references/gaokao-cn-risk-method.md): five-dimension risk method.
+- [`university/references/university-profile-search-index.md`](university/references/university-profile-search-index.md): school-profile lookup index.
 
-国际院校资源库目前是扩展入口，实际查询海外大学时仍应优先使用该国家或地区的官方大学、项目、签证、质量保障和学历认证来源。
+## Data Status
 
-## 局限性
+Current bundled data is intentionally conservative:
 
-这个 skill 不能保证本地资源库永远最新，也不替代学校招生办公室、省级考试院、签证机关、学历认证机构或专业监管机构的正式文件。它的价值在于让信息收集、来源核验和输出结构更稳定，减少凭记忆、凭第三方摘要或凭过期资料下结论的风险。
+- 31 China mainland 2026 province packs are present.
+- The province packs track official-source status and gaps.
+- Bundled official samples are pipeline fixtures, not full national enrollment databases.
+- The school profile library is background-only and must not generate gaokao candidate pools.
+
+For final high-impact decisions, users must still verify the official provincial filling system, current enrollment plan, plan corrections, candidate rank, subject eligibility, and university charter restrictions.
+
+## Optional Scripts
+
+The scripts are designed for deterministic checks and repeatable maintenance.
+
+```bash
+python3 university/scripts/validate_data.py university
+python3 university/scripts/run_self_test.py university
+python3 university/scripts/run_behavior_checks.py university
+python3 university/scripts/validate_official_data_sources.py university/references/gaokao-cn-official-data-sources.yaml
+python3 university/scripts/validate_profile_library.py university --strict
+```
+
+Common helper scripts:
+
+- `extract_html_table.py`: extract official webpage tables into CSV for review.
+- `extract_pdf_text.py`: extract official PDF text before manual table reconstruction.
+- `extract_xlsx_sheet.py`: extract official XLSX worksheets into CSV.
+- `normalize_enrollment_plan_csv.py`: normalize official plan CSV into structured JSON.
+- `resolve_plan_corrections.py`: remove cancelled/replaced plan items.
+- `build_candidate_pool.py`: filter plan items by candidate profile.
+- `build_risk_assessment.py`: produce conservative five-dimension risk output.
+- `check_submission_gates.py`: run anti-overclaim gate checks.
+- `province_readiness.py`: summarize 31 province-pack readiness and freshness.
+
+## Source Policy
+
+Field-level authority matters:
+
+- 2026 provincial enrollment plan and official corrections are highest authority for institution code, major group code, major code, plan count, tuition, campus, and remarks.
+- 2026 provincial education examination authority files are highest authority for volunteer mode, batches, filling time, confirmation rules, filing rules, and 征集志愿.
+- 2026 university admission charters and provincial plan remarks jointly verify physical exam, single-subject, language, filing ratio, professional admission, and adjustment restrictions.
+- University profile pages are only for stable background.
+- Third-party tools, rankings, forums, and experience posts are leads only.
+
+## Version
+
+Current release: [`v0.2.0`](https://github.com/Drew1811266/university/releases/tag/v0.2.0)
+
+`0.2.0` focuses on the gaokao-cn safety and research workflow:
+
+- single installable `university` skill;
+- platform-neutral structure;
+- 31 province-pack coverage;
+- candidate-pool and risk schemas;
+- import and validation scripts;
+- anti-overclaim gates;
+- behavior tests and profile-library validation.
+
+## License
+
+See [`LICENSE`](LICENSE).
