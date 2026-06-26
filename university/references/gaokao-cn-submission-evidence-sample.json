@@ -1,0 +1,74 @@
+[
+  {
+    "field": "provincial_policy_2026",
+    "source_title": "广东省教育考试院 2026 高考志愿填报通知样例",
+    "source_url": "https://eea.gd.gov.cn/",
+    "source_type": "provincial_exam_authority",
+    "applicable_year": 2026,
+    "applicable_audience": "广东 2026 普通高考考生",
+    "published_at": "2026-06-24",
+    "retrieved_at": "2026-06-25",
+    "field_evidence_level": "official_current",
+    "notes": "结构样例；真实使用必须替换为精确官方通知 URL。"
+  },
+  {
+    "field": "enrollment_plan_2026",
+    "source_title": "广东省 2026 普通高等学校招生专业目录样例",
+    "source_url": "https://eea.gd.gov.cn/",
+    "source_type": "provincial_enrollment_plan",
+    "applicable_year": 2026,
+    "applicable_audience": "广东 2026 普通高考考生",
+    "published_at": "2026-06-24",
+    "retrieved_at": "2026-06-25",
+    "field_evidence_level": "official_current",
+    "notes": "结构样例；真实使用必须替换为招生专业目录原始文件。"
+  },
+  {
+    "field": "plan_corrections_2026",
+    "source_title": "广东省 2026 招生计划更正样例",
+    "source_url": "https://eea.gd.gov.cn/",
+    "source_type": "provincial_plan_correction",
+    "applicable_year": 2026,
+    "applicable_audience": "广东 2026 普通高考考生",
+    "published_at": "2026-06-25",
+    "retrieved_at": "2026-06-25",
+    "field_evidence_level": "official_current",
+    "notes": "结构样例；真实使用必须替换为更正、增补、取消或无更正说明的官方来源。"
+  },
+  {
+    "field": "candidate_rank",
+    "source_title": "考生 2026 位次确认样例",
+    "source_url": "https://example.edu/user-confirmed-rank",
+    "source_type": "user_upload",
+    "applicable_year": 2026,
+    "applicable_audience": "该考生本人",
+    "published_at": null,
+    "retrieved_at": "2026-06-25",
+    "field_evidence_level": "user_supplied",
+    "notes": "结构样例；真实使用不得要求账号、密码、验证码或完整敏感截图。"
+  },
+  {
+    "field": "subject_qualification",
+    "source_title": "广东省 2026 招生专业目录选科要求样例",
+    "source_url": "https://eea.gd.gov.cn/",
+    "source_type": "provincial_enrollment_plan",
+    "applicable_year": 2026,
+    "applicable_audience": "广东 2026 普通高考物理类考生",
+    "published_at": "2026-06-24",
+    "retrieved_at": "2026-06-25",
+    "field_evidence_level": "official_current",
+    "notes": "结构样例；真实使用必须替换为具体院校专业组或专业选科要求来源。"
+  },
+  {
+    "field": "charter_restrictions_2026:10001",
+    "source_title": "示例大学 2026 招生章程样例",
+    "source_url": "https://example.edu/charter-2026",
+    "source_type": "university_admissions_charter",
+    "applicable_year": 2026,
+    "applicable_audience": "2026 普通本科招生考生",
+    "published_at": "2026-06-01",
+    "retrieved_at": "2026-06-25",
+    "field_evidence_level": "official_current",
+    "notes": "结构样例；真实使用必须替换为高校 2026 招生章程精确 URL。"
+  }
+]

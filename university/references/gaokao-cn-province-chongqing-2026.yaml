@@ -1,0 +1,100 @@
+province: 重庆
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: expected
+  published_at: "2026-06-10"
+  last_checked_at: "2026-06-25"
+  source_title: 成绩何时查？志愿怎么填？重庆高考后主要时间节点
+  source_url: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/jy1/jy/202606/t20260610_15744724.html
+  notes: 重庆市人民政府页面转述市教育考试院提醒：高考成绩预计6月25日左右公布，指定网站可查询成绩、个人排位、各类别各批次最低录取控制分数线和录取轨迹；确切开通时间和分数线明细需回到市教育考试院原始公告核验。
+
+score_review:
+  status: published
+  published_at: "2026-06-10"
+  last_checked_at: "2026-06-25"
+  source_title: 成绩何时查？志愿怎么填？重庆高考后主要时间节点
+  source_url: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/jy1/jy/202606/t20260610_15744724.html
+  notes: 考生若对成绩有疑义，可于6月25日12:00至17:00登录指定网站成绩查询页面申请成绩复核；6月27日18:00起可查询复核结果。
+
+control_lines:
+  status: partial
+  published_at: "2026-06-10"
+  last_checked_at: "2026-06-25"
+  source_title: 成绩何时查？志愿怎么填？重庆高考后主要时间节点
+  source_url: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/jy1/jy/202606/t20260610_15744724.html
+  items: []
+  notes: 官方页面说明可在指定网站查询各类别各批次最低录取控制分数线；数值字段仍需读取市教育考试院分数线公告后补齐。
+
+one_score_one_rank:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 重庆市教育考试院
+  source_url: https://www.cqksy.cn/
+  notes: 待核验2026一分一段表或分段表官方发布页；不得使用第三方转载作为最终风险量化依据。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-10"
+  last_checked_at: "2026-06-25"
+  source_title: 成绩何时查？志愿怎么填？重庆高考后主要时间节点
+  source_url: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/jy1/jy/202606/t20260610_15744724.html
+  mode: 网上填报，考生凭考生号（或身份证号）和高考报名时设置的密码登录指定网站填报志愿。
+  confirmation: 考生保存并安全退出后须再次登录检查志愿信息；志愿填报截止后按报名所在区县招考机构安排对志愿表签字确认，未按时签字确认视为已确认。
+  periods:
+    - name: 统一高考所有类别各批次
+      starts_at: "2026-06-27 09:00"
+      ends_at: "2026-06-30 18:00"
+      scope: 统一高考所有类别各批次；高水平运动队志愿以系统公告为准
+  notes: 志愿填报截止后任何人不能修改或补填；志愿数量、批次细则、专业组设置仍需核验正式填报指南。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-10"
+  last_checked_at: "2026-06-25"
+  source_title: 成绩何时查？志愿怎么填？重庆高考后主要时间节点
+  source_url: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/jy1/jy/202606/t20260610_15744724.html
+  notes: 官方页面说明考生可通过指定网站登录重庆市统一高考志愿填报辅助系统，或参阅重庆市2026年《填报志愿指南》和《招生计划汇编》查询本年度招生计划；生成候选池前仍需读取具体计划条目及更正。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 重庆市教育考试院
+  source_url: https://www.cqksy.cn/
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 重庆市教育考试院
+    url: https://www.cqksy.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 重庆招考信息网
+    url: https://www.cqzk.com.cn/
+    source_type: official_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+  - title: 重庆市统一高考志愿填报辅助系统
+    url: https://www.cqksy.cn/
+    source_type: official_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 成绩何时查？志愿怎么填？重庆高考后主要时间节点
+    url: https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/jy1/jy/202606/t20260610_15744724.html
+    source_type: government_public_page
+    status: published
+    published_at: "2026-06-10"
+    last_checked_at: "2026-06-25"
+  - title: 重庆市教育考试院
+    url: https://www.cqksy.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"

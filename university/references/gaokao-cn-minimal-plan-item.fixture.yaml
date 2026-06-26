@@ -1,0 +1,22 @@
+province: 广东
+year: 2026
+batch: 本科批
+subject_category: 物理
+institution_code: "0000"
+institution_name: 样例大学
+major_group_code: "201"
+major_code: "01"
+major_name: 样例专业
+plan_count: 1
+selected_subject_requirements:
+  - 物理
+tuition: 5000
+campus: 主校区
+project_type: 普通类
+remarks: 仅用于结构测试，不代表真实招生计划。
+source_file: fixture
+source_url:
+is_corrected: false
+correction_status: unknown
+replaces:
+replaced_by:

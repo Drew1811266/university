@@ -1,0 +1,104 @@
+province: 江苏
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省教育考试院普通高校招生栏目
+  source_url: https://www.jseea.cn/webfile/examination/highschool/
+  notes: 栏目显示 2026 成绩发布相关信息，但仍需打开并核验成绩查询原始公告与系统入口。
+
+score_review:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省教育考试院
+  source_url: https://www.jseea.cn/
+  notes: 待核验 2026 成绩复核申请时间、方式和截止时间。
+
+control_lines:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省2026年普通高校招生第一阶段录取控制分数线
+  source_url: https://www.jseea.cn/webfile/index/index_zkxx/2026-06-24/7475450259783553024.html
+  items: []
+  notes: 页面以图片附件展示分数线，当前只记录发布状态；具体分数需人工或 OCR 读取原图后再入库。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省2026年普通高考第一阶段逐分段统计表
+  source_url: https://www.jseea.cn/webfile/index/index_zkxx/2026-06-24/7475494421979467776.html
+  notes: 官方页面提供普通类历史、物理及艺体类逐分段附件；使用前必须按科类读取附件并保留累计位次口径。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-11"
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省2026年普通高校招生网上志愿填报工作的通知
+  source_url: https://www.jseea.cn/webfile/index/index_zcwj/2026-06-11/7470371910333763584.html
+  mode: 网上填报
+  confirmation:
+  periods: []
+  notes: 页面提供正式通知 docx 附件；批次、志愿数量、确认方式和征集安排需读取附件后结构化。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省2026年普通高校招生计划公布
+  source_url: https://www.jseea.cn/webfile/index/index_zkxx/2026-06-23/7474808080111243264.html
+  notes: 页面说明招生计划专刊约 6月24日送达考生；候选池必须来自招生计划专刊或官方电子计划及更正。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 江苏省教育考试院普通高校招生栏目
+  source_url: https://www.jseea.cn/webfile/examination/highschool/
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 江苏省教育考试院普通高校招生栏目
+    url: https://www.jseea.cn/webfile/examination/highschool/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 江苏省教育考试院普通高校招生栏目
+    url: https://www.jseea.cn/webfile/examination/highschool/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 江苏省2026年普通高校招生网上志愿填报工作的通知
+    url: https://www.jseea.cn/webfile/index/index_zcwj/2026-06-11/7470371910333763584.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-11"
+    last_checked_at: "2026-06-25"
+  - title: 江苏省2026年普通高校招生计划公布
+    url: https://www.jseea.cn/webfile/index/index_zkxx/2026-06-23/7474808080111243264.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-23"
+    last_checked_at: "2026-06-25"
+  - title: 江苏省2026年普通高校招生第一阶段录取控制分数线
+    url: https://www.jseea.cn/webfile/index/index_zkxx/2026-06-24/7475450259783553024.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 江苏省2026年普通高考第一阶段逐分段统计表
+    url: https://www.jseea.cn/webfile/index/index_zkxx/2026-06-24/7475494421979467776.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"

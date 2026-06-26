@@ -1,0 +1,146 @@
+province: 四川
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-26"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 四川省教育考试考生综合服务平台高考成绩查询
+  source_url: https://ks.sceea.cn/
+  expected_at: "2026-06-25 18:30"
+  notes: 四川省教育考试院首页已显示“高考成绩查询”系统入口；原温馨提醒称预计 2026-06-25 18:30 起可查成绩。不得要求或保存考生账号、密码、准考证号等敏感凭据。
+
+score_review:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 四川省2026年普通高考成绩查询温馨提醒
+  source_url: https://www.sceea.cn/Html/202606/Newsdetail_4847.html
+  deadline: "2026-06-27 12:00"
+  notes: 官方提醒称对成绩有疑问的考生须于 2026-06-27 12:00 前申请成绩复核。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 官方发布！四川省2026年普通高校招生录取控制分数线
+  source_url: https://www.sceea.cn/Html/202606/Newsdetail_4853.html
+  items:
+    - category: 历史类
+      batch: 本科批次
+      score: 455
+    - category: 历史类
+      batch: 高职（专科）批次
+      score: 150
+    - category: 历史类
+      batch: 特殊类型招生录取控制分数线
+      score: 525
+    - category: 物理类
+      batch: 本科批次
+      score: 435
+    - category: 物理类
+      batch: 高职（专科）批次
+      score: 150
+    - category: 物理类
+      batch: 特殊类型招生录取控制分数线
+      score: 519
+  notes: 分数线只用于资格边界和批次判断，不能替代位次、招生计划和章程核验。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 四川省2026年普通高考历史类、物理类成绩分段统计表
+  source_url: https://www.sceea.cn/Html/202606/Newsdetail_4858.html
+  related_urls:
+    - https://www.sceea.cn/Html/202606/Newsdetail_4858.html
+    - https://www.sceea.cn/Html/202606/Newsdetail_4857.html
+  notes: 历史类与物理类分段统计表分别由四川省教育考试院于 2026-06-25 发布；页面主体为图片表，结构化使用前必须抽取并人工核验全量分段数据。
+
+volunteer_filling:
+  status: needs_recheck
+  last_checked_at: "2026-06-26"
+  source_title: 四川省教育考试考生综合服务平台高考志愿填报
+  source_url: https://ks.sceea.cn/
+  notes: 四川省教育考试院首页已显示“高考志愿填报”系统入口；仍需从 2026 志愿填报文件核验批次、志愿单位、志愿数量、时间、确认规则和征集志愿规则。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 2026年普通高校在川招生专业及名额介绍
+  source_url: https://plan.sceea.cn/
+  notes: 官方计划查询入口已发布；候选池仍需从该入口或官方出版物抽取全量专业组、专业代码、计划人数、选科、学费、校区和备注，不能用入口级来源直接生成可提交志愿表。
+
+plan_corrections:
+  status: corrected
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 关于下发2026年普通高校在川招生计划更正及调整的通知
+  source_url: https://www.sceea.cn/Html/202606/Newsdetail_4852.html
+  notes: 四川省教育考试院 2026-06-25 发布招生计划更正及调整通知；全量使用前必须完整解析删除、新增、代码变更、计划人数变化和替换关系。
+
+systems:
+  - title: 四川省教育考试院普通高考栏目
+    url: https://www.sceea.cn/html/examenrollment.html
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-26"
+  - title: 四川省教育考试考生综合服务平台
+    url: https://ks.sceea.cn/
+    source_type: official_system_entry
+    status: published
+    last_checked_at: "2026-06-26"
+  - title: 2026年普通高校在川招生专业及名额介绍
+    url: https://plan.sceea.cn/
+    source_type: official_plan_query
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+
+sources:
+  - title: 四川省2026年普通高考成绩查询温馨提醒
+    url: https://www.sceea.cn/Html/202606/Newsdetail_4847.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-26"
+  - title: 官方发布！四川省2026年普通高校招生录取控制分数线
+    url: https://www.sceea.cn/Html/202606/Newsdetail_4853.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 官方发布！四川省2026年普通高考历史类成绩分段统计表出炉
+    url: https://www.sceea.cn/Html/202606/Newsdetail_4858.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 官方发布！四川省2026年普通高考物理类成绩分段统计表出炉
+    url: https://www.sceea.cn/Html/202606/Newsdetail_4857.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 2026年普通高校在川招生专业及名额介绍
+    url: https://plan.sceea.cn/
+    source_type: official_plan_query
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 关于下发2026年普通高校在川招生计划更正及调整的通知
+    url: https://www.sceea.cn/Html/202606/Newsdetail_4852.html
+    source_type: provincial_exam_authority
+    status: corrected
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 四川省教育考试院普通高考栏目
+    url: https://www.sceea.cn/html/examenrollment.html
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-26"

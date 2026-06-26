@@ -1,0 +1,124 @@
+province: 青海
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-26"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 青海省2026年普通高考成绩发布公告
+  source_url: https://www.qhjyks.com/zyym/ztzl/ptgkz/5821.htm
+  notes: 官方公告称成绩拟于2026年6月25日13时公布，考生可通过青海省教育考试网进入综合管理平台考生端查询；不要要求用户提供账号、密码、验证码或完整身份证号。
+
+score_review:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 青海省2026年普通高考成绩发布公告
+  source_url: https://www.qhjyks.com/zyym/ztzl/ptgkz/5821.htm
+  notes: 成绩复核申请须在青海省教育考试业务管理平台-考生端填写申请表并下载打印，考生本人于2026年6月26日17点前携带材料到高考报名考区招考机构申请；复核结果于2026年6月28日19点后通过平台通知。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 青海省2026年普通高考录取控制分数线公布
+  source_url: https://www.qhjyks.com/zyym/szzkdtq/2022gkdt/5827.htm
+  items: []
+  notes: 已核验省教育考试网控制线发布页；页面正文未暴露可直接抽取的分科类数值，提交前仍需从官方原文、附件、截图或平台完成字段级结构化，不得使用第三方汇总替代。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 2026年青海省普通高校招生考试排序成绩一分一段统计表
+  source_url: https://www.qhjyks.com/zyym/szzkdtq/2022gkdt/5826.htm
+  notes: 官方发布页提供普通类、艺考类、体育类、国家专项/地方专项/高校专项、民族班/预科班、藏文、蒙文等一分一段统计表 PDF；当前仅核验发布页和附件入口，尚未完成全表结构化抽取。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 青海省2026年普通高考成绩发布公告
+  source_url: https://www.qhjyks.com/zyym/ztzl/ptgkz/5821.htm
+  mode: 网上集中填报志愿；除按教育部及招生院校核定拟录取名单投档录取以及需填报纸质志愿的考生外，其余考生一次性填报符合条件的所有批次（段）志愿。
+  confirmation: 志愿填报系统将在截止时间自动关闭，逾期不再受理补报及志愿修改；用户须自行保管考生号、身份证号、手机号、登录密码、短信验证码和志愿提交码。
+  periods:
+    - name: 首次网上集中填报志愿
+      starts_at: "2026-06-26 12:00"
+      ends_at: "2026-06-30 18:00"
+      scope: 符合条件的所有批次（段）志愿
+  notes: 录取工作实施细则明确2026年共设置四个批次、十个段，本科批⑦段和高职（专科）批⑩段均填报96个专业（类）平行志愿；不同提前批段分别设置2个院校顺序志愿或60个专业（类）平行志愿。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-15"
+  last_checked_at: "2026-06-26"
+  source_title: 青海省2026年普通高等学校招生录取工作实施细则
+  source_url: https://www.qhjyks.com/zyym/ztzl/ptgkz/5807.htm
+  notes: 实施细则称省考试院依据教育部下达招生计划，与在青招生高校核对、汇总分专业招生计划及其说明，编印《2026年全国普通高等学校在青招生录取计划及专业目录》，在高考成绩公布后及时统一向社会公布。本包尚未核验到可公开抽取的全量专业目录文件，不能生成最终候选池。
+
+plan_corrections:
+  status: monitor_current
+  published_at:
+  last_checked_at: "2026-06-26"
+  source_title: 青海省教育考试网
+  source_url: https://www.qhjyks.com/zyym/
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 青海省教育考试网
+    url: https://www.qhjyks.com/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-26"
+  - title: 青海省教育考试网主站
+    url: https://www.qhjyks.com/zyym/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-26"
+  - title: 青海省教育考试综合管理平台-考生端
+    url: https://zhptks.qhjyks.com/student_anon/login?backUrl=%2Fstudent
+    source_type: official_system
+    status: official_entry
+    last_checked_at: "2026-06-26"
+
+sources:
+  - title: 青海省2026年普通高校招生志愿填报分流页面
+    url: https://www.qhjyks.com/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 青海省2026年普通高考成绩发布公告
+    url: https://www.qhjyks.com/zyym/ztzl/ptgkz/5821.htm
+    source_type: provincial_exam_authority
+    status: official_2026_score_release_and_volunteer_time
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-26"
+  - title: 青海省2026年普通高考录取控制分数线公布
+    url: https://www.qhjyks.com/zyym/szzkdtq/2022gkdt/5827.htm
+    source_type: provincial_exam_authority
+    status: official_2026_control_lines_entry
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 2026年青海省普通高校招生考试排序成绩一分一段统计表
+    url: https://www.qhjyks.com/zyym/szzkdtq/2022gkdt/5826.htm
+    source_type: provincial_exam_authority
+    status: official_2026_score_segment_entry
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 青海省2026年普通高等学校招生录取工作实施细则
+    url: https://www.qhjyks.com/zyym/ztzl/ptgkz/5807.htm
+    source_type: provincial_exam_authority
+    status: official_2026_admission_rules_and_plan_context
+    published_at: "2026-06-15"
+    last_checked_at: "2026-06-26"
+  - title: 关于开放志愿填报服务点和开通志愿填报咨询服务热线的公告
+    url: https://www.qhjyks.com/zyym/tzgg/5833.htm
+    source_type: provincial_exam_authority
+    status: official_2026_volunteer_service_notice
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"

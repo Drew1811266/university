@@ -1,0 +1,30 @@
+{
+  "province": "广东",
+  "year": 2026,
+  "subject_profile": {
+    "type": "selected_subjects",
+    "selected_subjects": ["物理", "化学"]
+  },
+  "score": 600,
+  "rank": 30000,
+  "target_batch": "本科批",
+  "qualifications": [],
+  "physical_exam_limits": [],
+  "single_subject_scores": {},
+  "foreign_language": "英语",
+  "budget": {
+    "max_annual_tuition": 10000,
+    "accept_high_fee_programs": false
+  },
+  "regions": {
+    "preferred": [],
+    "excluded": []
+  },
+  "major_preferences": {
+    "preferred": ["计算机", "数据科学"],
+    "excluded": [],
+    "accept_related": true
+  },
+  "adjustment_acceptance": "conditional",
+  "unacceptable_outcomes": ["中外合作", "高收费"]
+}

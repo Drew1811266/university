@@ -1,0 +1,110 @@
+province: 新疆
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: 新疆2026年普通高考成绩拟于6月24日上午12时公布
+  source_url: https://www.xjzk.gov.cn/c/2026-06-22/495340.shtml
+  notes: 2026年普通高考成绩拟于6月24日12:00公布；考生凭考生号（准考证号）、身份证号和成绩查询密码查询本人高考成绩和位次。技能不得索取或保存上述敏感信息。
+
+score_review:
+  status: published
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: 新疆2026年普通高考成绩拟于6月24日上午12时公布
+  source_url: https://www.xjzk.gov.cn/c/2026-06-22/495340.shtml
+  notes: 成绩公布后，如对成绩存疑，考生可于6月25日至6月29日向报名中学或报名所在地教育考试机构申领《2026年自治区普通高考成绩复核申请表》并按程序申请复核；复核不重新评卷，评分标准和评分细则宽严不在复核范围。
+
+control_lines:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 新疆2026年普通高校招生各批次最低投档控制分数线确定
+  source_url: https://www.xjzk.gov.cn/c/2026-06-24/495382.shtml
+  items: []
+  notes: 官方页面已公布各批次最低投档控制分数线，但具体数值以页面图片/附件为准；本次未可靠抽取图片数值，不得依据第三方转载填写分数线或生成最终判断。
+
+one_score_one_rank:
+  status: partial
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: 新疆2026年普通高考成绩拟于6月24日上午12时公布
+  source_url: https://www.xjzk.gov.cn/c/2026-06-22/495340.shtml
+  notes: 官方公告说明成绩查询通道可查询本人位次；是否另有公开一分一段表或分段表需继续核验。未读取考生位次前不得做冲稳保量化。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: 新疆2026年普通高考志愿填报系统拟于6月25日上午12时正式开通
+  source_url: https://www.xjzk.gov.cn/c/2026-06-22/495343.shtml
+  mode: 网上填报，考生通过新疆教育考试院官方网站“公众服务大厅”中的“志愿填报”进入“新疆普通高考志愿填报”系统。
+  confirmation: 填报前须严格按照《2026年普通高等学校在疆招生计划专业目录》公布的院校招生代号、院校名称、招生批次、科类、招生专业代号、专业名称和相关要求填报并确认，内容应准确无误。
+  periods:
+    - name: 本科提前批次
+      starts_at: "2026-06-25 12:00"
+      ends_at: "2026-07-01 12:00"
+      scope: 本科提前批次
+    - name: 其他批次
+      starts_at: "2026-06-25 12:00"
+      ends_at: "2026-07-03 12:00"
+      scope: 其他批次
+  notes: 志愿填报期间每日2:00至8:00为系统运维时间；录取期间从本科一批次征集志愿时起，考生可在征集志愿时间填报并修改后续批次志愿。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: 新疆2026年普通高考志愿填报系统拟于6月25日上午12时正式开通
+  source_url: https://www.xjzk.gov.cn/c/2026-06-22/495343.shtml
+  notes: 官方要求考生登录系统后查阅《2026年普通高等学校在疆招生计划专业目录》，并以该目录中的院校招生代号、专业代号、专业名称和相关要求填报；生成候选池仍需读取具体目录条目和后续更正。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 新疆教育考试院
+  source_url: https://www.xjzk.gov.cn/
+  notes: 持续追踪招生计划目录更正、增补、取消、替换、代码变化和计划人数变化；定向就业、对口援疆、医学定向等专项计划需单独核验资格与计划。
+
+systems:
+  - title: 新疆教育考试院
+    url: https://www.xjzk.gov.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 新疆普通高考成绩查询
+    url: https://www.xjzk.gov.cn/
+    source_type: official_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+  - title: 新疆普通高考志愿填报系统
+    url: https://www.xjzk.gov.cn/
+    source_type: official_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 新疆2026年普通高考成绩拟于6月24日上午12时公布
+    url: https://www.xjzk.gov.cn/c/2026-06-22/495340.shtml
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-22"
+    last_checked_at: "2026-06-25"
+  - title: 新疆2026年普通高校招生各批次最低投档控制分数线确定
+    url: https://www.xjzk.gov.cn/c/2026-06-24/495382.shtml
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 新疆2026年普通高考志愿填报系统拟于6月25日上午12时正式开通
+    url: https://www.xjzk.gov.cn/c/2026-06-22/495343.shtml
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-22"
+    last_checked_at: "2026-06-25"

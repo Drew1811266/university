@@ -20,7 +20,7 @@ Use this mode for narrow questions such as “介绍一下某校”, “这个�
 Default structure:
 
 1. `简要结论`: 1-2 sentences or 2-3 bullets.
-2. `依据与来源`: official source links, profile-library source quality, and retrieval date when relevant.
+2. `依据与来源`: official source links, profile-library `profile_source_status`, and retrieval date when relevant.
 3. `关键风险`: only risks that materially affect the user's decision.
 4. `待核验项`: missing, current-year, login-only, conflicting, or time-sensitive items.
 
@@ -31,8 +31,8 @@ Examples:
 单校介绍：
 
 - `简要结论`：用资源库背景给出学校定位、城市和稳定特色；不加入招生、费用或截止日期。
-- `依据与来源`：标注资源库来源质量、官方主页、精确简介/概况页或 `待补充`、最后人工核验日期。
-- `关键风险`：若来源质量为 `C`，提示“来源需复核”；若用户继续问招生信息，说明需查 2025 年及以后官方招生来源。
+- `依据与来源`：标注资源库 `profile_source_status`、官方主页、精确简介/概况页或 `待补充`、最后人工核验日期。
+- `关键风险`：若 `profile_source_status` 为 `C`，提示“来源需复核”；若用户继续问招生信息，说明需查当年官方招生来源。
 - `待核验项`：校区变化、办学性质、更名合并、院系调整等稳定背景疑点。
 
 高考志愿初步判断：
@@ -60,7 +60,7 @@ Examples:
 | 学校性质 | 公立、私立、国立、研究型、综合型等 |
 | 官方网站 | 官方主页链接 |
 | 资源库背景摘要 | 仅使用非时效性简介；招生、项目、费用、截止日期和政策不得写入此字段 |
-| 来源质量 | `A` / `B` / `C`，来自资源库；未收录则写未收录 |
+| profile_source_status | `A` / `B` / `C`，来自资源库；未收录则写未收录 |
 | 核验来源 | 资源库条目的官网、简介/概况页、信息公开页或教育主管页面 |
 | 学校简介 | 办学历史、定位、规模、特色 |
 | 优势学科 | 需注明来源或标记待核验 |
@@ -108,7 +108,7 @@ Examples:
 | 官方来源数量 | 数量和来源类型 |
 | 非官方来源 | 是否使用，使用目的 |
 | 检索日期 | YYYY-MM-DD |
-| 时效口径 | 时效字段默认仅采用 2025 年及以后信息；稳定背景可使用当前官方简介中的历史事实 |
+| 时效口径 | 时效字段默认采用目标年份、目标入学季或当前官方来源；2026 高考最终填报结论必须使用 2026 官方来源，历史数据只能用于比较 |
 | 证据台账 | 高影响或时效字段按 `source-evidence-ledger.md` 记录字段级证据 |
 | 待核验项 | 缺失、冲突、过期、需登录的信息 |
 | 重要提醒 | 政策变动、项目差异、年份限制 |

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "risk-assessment.schema.json",
+  "title": "Gaokao Five-Dimension Risk Assessment",
+  "type": "object",
+  "required": [
+    "candidate_item_id",
+    "qualification_risk",
+    "filing_risk",
+    "major_adjustment_risk",
+    "withdrawal_risk",
+    "outcome_acceptability_risk",
+    "gradient_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "candidate_item_id": { "type": "string", "minLength": 1 },
+    "qualification_risk": { "$ref": "#/$defs/risk" },
+    "filing_risk": { "$ref": "#/$defs/risk" },
+    "major_adjustment_risk": { "$ref": "#/$defs/risk" },
+    "withdrawal_risk": { "$ref": "#/$defs/risk" },
+    "outcome_acceptability_risk": { "$ref": "#/$defs/risk" },
+    "gradient_status": {
+      "type": "string",
+      "enum": ["冲", "稳", "保", "数据不足，不能判定冲稳保", "不适用"]
+    },
+    "quantification_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "historical_sample_count": { "type": "integer", "minimum": 0 },
+        "current_plan_count": { "type": ["integer", "null"], "minimum": 0 },
+        "historical_plan_count_count": { "type": "integer", "minimum": 0 },
+        "plan_count_change_ratio": { "type": ["number", "null"], "minimum": 0 },
+        "rank_volatility_ratio": { "type": ["number", "null"], "minimum": 0 },
+        "stop_reasons": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      }
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  },
+  "$defs": {
+    "risk": {
+      "type": "object",
+      "required": ["level", "rationale"],
+      "additionalProperties": false,
+      "properties": {
+        "level": { "type": "string", "enum": ["low", "medium", "high", "unknown", "not_applicable"] },
+        "rationale": { "type": "string", "minLength": 1 },
+        "proof_gaps": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      }
+    }
+  }
+}

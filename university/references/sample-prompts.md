@@ -7,7 +7,7 @@ Use these prompts to check that the skill applies the resource library conservat
 Prompt:
 
 ```text
-请用 university skill 简要介绍浙江大学，说明来源质量，并提醒哪些内容不能只靠资源库判断。
+请用 university skill 简要介绍浙江大学，说明 profile_source_status，并提醒哪些内容不能只靠资源库判断。
 ```
 
 Expected behavior:

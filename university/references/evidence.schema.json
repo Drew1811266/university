@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evidence.schema.json",
+  "title": "Field Evidence Ledger Item",
+  "type": "object",
+  "required": [
+    "field",
+    "source_title",
+    "source_url",
+    "source_type",
+    "applicable_year",
+    "applicable_audience",
+    "retrieved_at",
+    "field_evidence_level"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "field": { "type": "string", "minLength": 1 },
+    "source_title": { "type": "string", "minLength": 1 },
+    "source_url": { "type": ["string", "null"], "format": "uri" },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "provincial_exam_authority",
+        "provincial_enrollment_plan",
+        "provincial_plan_correction",
+        "university_admissions_charter",
+        "university_department",
+        "official_auxiliary_system",
+        "official_publication",
+        "third_party_lead",
+        "user_upload"
+      ]
+    },
+    "applicable_year": { "type": ["integer", "string"] },
+    "applicable_audience": { "type": "string", "minLength": 1 },
+    "published_at": { "type": ["string", "null"] },
+    "retrieved_at": { "type": "string", "format": "date" },
+    "field_evidence_level": {
+      "type": "string",
+      "enum": ["official_current", "official_historical", "official_entry_only", "user_supplied", "third_party_lead", "missing"]
+    },
+    "notes": { "type": ["string", "null"] }
+  }
+}

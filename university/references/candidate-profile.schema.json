@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "candidate-profile.schema.json",
+  "title": "Gaokao Candidate Profile",
+  "type": "object",
+  "required": ["province", "year", "subject_profile", "score", "rank", "target_batch"],
+  "additionalProperties": false,
+  "properties": {
+    "province": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "const": 2026 },
+    "subject_profile": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "enum": ["physics", "history", "science", "arts", "selected_subjects", "other"] },
+        "selected_subjects": {
+          "type": "array",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "score": { "type": ["integer", "null"], "minimum": 0 },
+    "rank": { "type": ["integer", "null"], "minimum": 1 },
+    "target_batch": { "type": "string", "minLength": 1 },
+    "qualifications": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "physical_exam_limits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "single_subject_scores": {
+      "type": "object",
+      "additionalProperties": { "type": ["integer", "number", "null"] },
+      "default": {}
+    },
+    "foreign_language": { "type": ["string", "null"] },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_annual_tuition": { "type": ["integer", "null"], "minimum": 0 },
+        "accept_high_fee_programs": { "type": ["boolean", "null"] }
+      },
+      "default": {}
+    },
+    "regions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preferred": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "excluded": { "type": "array", "items": { "type": "string" }, "default": [] }
+      },
+      "default": {}
+    },
+    "major_preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preferred": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "excluded": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "accept_related": { "type": ["boolean", "null"] }
+      },
+      "default": {}
+    },
+    "adjustment_acceptance": {
+      "type": "string",
+      "enum": ["accept", "conditional", "reject", "unknown"],
+      "default": "unknown"
+    },
+    "unacceptable_outcomes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  }
+}

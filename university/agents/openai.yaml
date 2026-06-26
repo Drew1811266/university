@@ -1,4 +1,0 @@
-interface:
-  display_name: "university"
-  short_description: "官方核验院校、招生、专业、高考与留学信息"
-  default_prompt: "使用 $university 检索并整理院校、招生、专业，以及中国高考志愿或高考生海外本科申请的官方核验信息。"

@@ -1,0 +1,109 @@
+province: 福建
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 福建省2026年普通高考成绩公布通告
+  source_url: https://www.eeafj.cn/gkptgkgsgg/20260624/14695.html
+  notes: 成绩查询须通过福建省教育考试院数字服务大厅；不得要求或保存考生账号、密码、考生号等敏感凭据。
+
+score_review:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 福建省2026年普通高校招生考试成绩复核实施办法
+  source_url: https://www.eeafj.cn/gkptgkgsgg/20260624/14716.html
+  notes: 复核申请截至 6月27日12:00；复核结果 6月30日17:00前反馈，复审申请截至 7月2日17:00。
+
+control_lines:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 福建省2026年普通高考录取控制分数线公布
+  source_url: https://www.eeafj.cn/gkptgkgsgg/20260624/14697.html
+  items: []
+  notes: 页面以图片展示控制线，当前只记录发布状态；具体分数需人工或 OCR 读取原图后再入库。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 福建省2026年高考考生成绩分布
+  source_url: https://www.eeafj.cn/sygkgzyy/
+  notes: 历史科目组和物理科目组分别发布图片附件；使用前必须读取相应附件并保留累计位次口径。
+
+volunteer_filling:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 福建省教育考试院高考高招网上数字服务大厅
+  source_url: https://www.eeafj.cn/sygkgzyy/
+  mode:
+  confirmation:
+  periods: []
+  notes: 待核验 2026 志愿填报时间、批次、志愿数量、确认方式和征集规则。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年福建省普通高校招生计划
+  source_url: https://www.eeafj.cn/gkptgkgsgg/20260624/14715.html
+  notes: 页面提供物理科目组、历史科目组、艺术类和体育类计划附件；候选池必须从对应附件和后续更正生成。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 福建省教育考试院高考高招网上数字服务大厅
+  source_url: https://www.eeafj.cn/sygkgzyy/
+  notes: 持续追踪招生计划附件更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 福建省教育考试院高考高招网上数字服务大厅
+    url: https://www.eeafj.cn/sygkgzyy/
+    source_type: official_system_entry
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 福建省教育考试院
+    url: https://www.eeafj.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 福建省教育考试院高考高招网上数字服务大厅
+    url: https://www.eeafj.cn/sygkgzyy/
+    source_type: official_system_entry
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 福建省2026年普通高考成绩公布通告
+    url: https://www.eeafj.cn/gkptgkgsgg/20260624/14695.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 福建省2026年普通高校招生考试成绩复核实施办法
+    url: https://www.eeafj.cn/gkptgkgsgg/20260624/14716.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 福建省2026年普通高考录取控制分数线公布
+    url: https://www.eeafj.cn/gkptgkgsgg/20260624/14697.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 2026年福建省普通高校招生计划
+    url: https://www.eeafj.cn/gkptgkgsgg/20260624/14715.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"

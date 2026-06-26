@@ -1,0 +1,199 @@
+# Template for `references/gaokao-cn-province-{slug}-2026.yaml`.
+# Replace placeholders with verified official-source data. Keep unknown fields as
+# `needs_recheck`, `not_released`, or `unknown`; do not infer missing dates.
+
+province: "西藏"
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: "西藏自治区2026年普通高考成绩公布时间及复核办法"
+  source_url: "http://zsks.edu.xizang.gov.cn/71/74/7863.html"
+  notes: 官方公告写明，西藏自治区 2026 年普通高考成绩将于 2026-06-25 12:00 向考生公布；查询方式包括西藏自治区教育考试招生信息查询系统（http://xxcx.zsks.edu.xizang.gov.cn:8082）、西藏政务服务网（https://www.xzzwfw.gov.cn）和绑定“西藏教育考试招生”微信服务号。涉及考生号、身份证号、密码、手机号等敏感信息时，只能提示用户在官方系统自行输入。
+
+score_review:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: "西藏自治区2026年普通高考成绩公布时间及复核办法"
+  source_url: "http://zsks.edu.xizang.gov.cn/71/74/7863.html"
+  notes: 成绩公布后，考生如对本人成绩有异议，可申请复核；复核申请提交截止时间为 2026-06-28 18:30 前，逾期不予办理。考生须携带本人居民身份证和准考证原件，到报名所在地教育考试机构填写《2026年西藏自治区普通高考成绩复查申请表》一次性提出复核申请。复核内容包括个人相关信息、是否本人答题卡、是否漏评、小题得分是否漏统（登）、各小题得分合成后是否与提供给考生的成绩一致等，不涉及评分标准和评分细则掌握宽严问题。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: "西藏自治区2026年普通高等学校招生录取最低控制分数线"
+  source_url: "http://zsks.edu.xizang.gov.cn/71/73/7866.html"
+  items:
+    - category: 普通生源
+      subject_group: 文史类 A 类考生
+      batch: 本科一批
+      score: 330
+    - category: 普通生源
+      subject_group: 文史类 B 类考生
+      batch: 本科一批
+      score: 400
+    - category: 普通生源
+      subject_group: 文史类 A 类考生
+      batch: 本科二批
+      score: 294
+    - category: 普通生源
+      subject_group: 文史类 B 类考生
+      batch: 本科二批
+      score: 304
+    - category: 普通生源
+      subject_group: 文史类 A 类考生
+      batch: 专科批
+      score: 237
+    - category: 普通生源
+      subject_group: 文史类 B 类考生
+      batch: 专科批
+      score: 237
+    - category: 普通生源
+      subject_group: 理工类 A 类考生
+      batch: 本科一批
+      score: 300
+    - category: 普通生源
+      subject_group: 理工类 B 类考生
+      batch: 本科一批
+      score: 400
+    - category: 普通生源
+      subject_group: 理工类 A 类考生
+      batch: 本科二批
+      score: 260
+    - category: 普通生源
+      subject_group: 理工类 B 类考生
+      batch: 本科二批
+      score: 300
+    - category: 普通生源
+      subject_group: 理工类 A 类考生
+      batch: 专科批
+      score: 195
+    - category: 普通生源
+      subject_group: 理工类 B 类考生
+      batch: 专科批
+      score: 195
+    - category: 普通生源艺体类
+      subject_group: 文史类 A 类考生
+      batch: 本科文化成绩最低控制线
+      score: 221
+    - category: 普通生源艺体类
+      subject_group: 文史类 B 类考生
+      batch: 本科文化成绩最低控制线
+      score: 228
+    - category: 普通生源艺体类
+      subject_group: 文史类 A 类考生
+      batch: 专科文化成绩最低控制线
+      score: 166
+    - category: 普通生源艺体类
+      subject_group: 文史类 B 类考生
+      batch: 专科文化成绩最低控制线
+      score: 166
+    - category: 普通生源艺体类
+      subject_group: 理工类 A 类考生
+      batch: 本科文化成绩最低控制线
+      score: 195
+    - category: 普通生源艺体类
+      subject_group: 理工类 B 类考生
+      batch: 本科文化成绩最低控制线
+      score: 225
+    - category: 普通生源艺体类
+      subject_group: 理工类 A 类考生
+      batch: 专科文化成绩最低控制线
+      score: 137
+    - category: 普通生源艺体类
+      subject_group: 理工类 B 类考生
+      batch: 专科文化成绩最低控制线
+      score: 137
+    - category: 部队生源
+      subject_group: 文史类
+      batch: 本科
+      score: 292
+    - category: 部队生源
+      subject_group: 理工类
+      batch: 本科
+      score: 269
+  notes: 控制线数值来自西藏自治区教育考试院官方图片公告（http://zsks.edu.xizang.gov.cn/fs/2/image/20260625/1782360203664.png）。A 类考生指区内世居两代（含两代）以上少数民族考生；B 类考生指汉族及区外少数民族考生。艺体类本科专业招生文化成绩录取最低控制分数线按本科二批 75% 划定，艺体类专科文化成绩按专科批 70% 划定；录取时还须按文化和专业统考成绩综合或体育统考成绩择优。控制线不构成录取承诺。
+
+one_score_one_rank:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "西藏自治区教育考试院高考高招栏目"
+  source_url: "http://zsks.edu.xizang.gov.cn/71/index.html"
+  notes: 已核验高考高招栏目，尚未找到并读取 2026 普通高考成绩分段统计表/一分一段表原始公告或附件。量化冲稳保前必须取得对应考生类别、生源类别、文史/理工和分数段/位次数据；不得用控制线或 2025 位次替代。
+
+volunteer_filling:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "西藏自治区教育考试院高考高招栏目"
+  source_url: "http://zsks.edu.xizang.gov.cn/71/index.html"
+  mode:
+  confirmation:
+  periods: []
+  notes: 尚未找到并读取西藏 2026 普通高校招生志愿填报时间、志愿模式、批次、志愿数量、确认方式、投档和征集志愿规则原始公告。最终咨询必须回到 2026 官方填报通知、招生计划和系统规则逐项核验。
+
+enrollment_plan:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "西藏2026年普通高等学校招生专业目录"
+  source_url: "http://zsks.edu.xizang.gov.cn/"
+  notes: 必须使用 2026 官方招生专业目录及其更正，不能用院校库、排名库或大学官网专业页生成候选池。生成候选池前必须读取具体院校、专业、批次、生源类别、计划人数、学费、校区、备注和资格限制。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "西藏自治区教育考试院高考高招栏目"
+  source_url: "http://zsks.edu.xizang.gov.cn/71/index.html"
+  notes: 持续追踪招生计划更正、增补、取消、替换、代码变化和计划人数变化；若官方招生计划、系统、后续更正公告和高校官网不一致，以西藏 2026 官方招生计划及更正为候选池最高依据。
+
+systems:
+  - title: "西藏自治区教育考试院"
+    url: "http://zsks.edu.xizang.gov.cn/"
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: "西藏自治区教育考试院高考高招栏目"
+    url: "http://zsks.edu.xizang.gov.cn/71/index.html"
+    source_type: provincial_exam_authority
+    status: official_gaokao_column
+    last_checked_at: "2026-06-25"
+  - title: "西藏自治区教育考试招生信息查询系统"
+    url: "http://xxcx.zsks.edu.xizang.gov.cn:8082"
+    source_type: official_score_query_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+  - title: "西藏政务服务网"
+    url: "https://www.xzzwfw.gov.cn"
+    source_type: official_score_query_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: "西藏自治区2026年普通高考成绩公布时间及复核办法"
+    url: "http://zsks.edu.xizang.gov.cn/71/74/7863.html"
+    source_type: provincial_exam_authority
+    status: official_2026_score_and_review_notice
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: "西藏自治区2026年普通高等学校招生录取最低控制分数线"
+    url: "http://zsks.edu.xizang.gov.cn/71/73/7866.html"
+    source_type: provincial_exam_authority
+    status: official_2026_control_lines_image
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: "西藏自治区教育考试院高考高招栏目"
+    url: "http://zsks.edu.xizang.gov.cn/71/index.html"
+    source_type: provincial_exam_authority
+    status: official_gaokao_column
+    published_at:
+    last_checked_at: "2026-06-25"

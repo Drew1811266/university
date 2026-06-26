@@ -1,0 +1,230 @@
+# Template for `references/gaokao-cn-province-{slug}-2026.yaml`.
+# Replace placeholders with verified official-source data. Keep unknown fields as
+# `needs_recheck`, `not_released`, or `unknown`; do not infer missing dates.
+
+province: "山西"
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: "山西省2026年高考成绩查询方式"
+  source_url: "http://www.sxkszx.cn/news/2026624/n2371127209.html"
+  notes: 官方公告写明，山西省 2026 年高考成绩将于 2026-06-25 发布；省招考中心于 2026-06-25 00:00 前将成绩以短信形式发送至考生高考网上报名时填写的手机号。自 2026-06-25 起，考生可通过山西招生考试网“考生登录”-“2026年普通高考考生网上服务平台”、支付宝“山西招考”小程序、支付宝/微信“三晋通”小程序、百度“山西省招生考试管理中心”小程序等官方渠道查询。涉及考生号、登录密码、手机号、身份证号等敏感信息时，只能提示用户在官方系统自行输入。
+
+score_review:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: "山西省2026年普通高校招生本科录取最低控制分数线公告"
+  source_url: "http://www.sxkszx.cn/news/2026625/n4845127211.html"
+  notes: 控制线公告“成绩复核”部分写明，考生对成绩有异议的，可于 2026-06-26 至 2026-06-27 每日 9:00-18:00 到考生报名所在地县（市、区）招考部门办理申请复核手续，应届毕业生也可在当时报名参加高考的报名点办理，逾期不予受理。申请须按考试科目提出并填写《山西省2026年普通高校招生考试成绩复核申请表》，复核结论逐级返回，由县（市、区）招考部门及时通知考生。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: "山西省2026年普通高校招生本科录取最低控制分数线公告"
+  source_url: "http://www.sxkszx.cn/news/2026625/n4845127211.html"
+  items:
+    - category: 普通类
+      subject_group: 历史组
+      batch: 普通本科批
+      score: 409
+    - category: 普通类
+      subject_group: 历史组
+      batch: 特殊类型录取控制分数线
+      score: 538
+    - category: 普通类
+      subject_group: 物理组
+      batch: 普通本科批
+      score: 401
+    - category: 普通类
+      subject_group: 物理组
+      batch: 特殊类型录取控制分数线
+      score: 524
+    - category: 艺术类
+      subject_group: 艺术（历史组）
+      batch: 艺术本科提前批使用校考成绩专业文化成绩最低控制分数线
+      score: 409
+    - category: 艺术类
+      subject_group: 艺术（物理组）
+      batch: 艺术本科提前批使用校考成绩专业文化成绩最低控制分数线
+      score: 401
+    - category: 艺术类
+      subject_group: 戏曲类省际联考（历史组）
+      batch: 艺术本科提前批文化/专业成绩最低控制分数线
+      score: "205/180"
+    - category: 艺术类
+      subject_group: 戏曲类省际联考（物理组）
+      batch: 艺术本科提前批文化/专业成绩最低控制分数线
+      score: "201/180"
+    - category: 艺术类
+      subject_group: 艺术（历史组）
+      batch: 艺术本科批文化成绩最低控制分数线
+      score: 307
+    - category: 艺术类
+      subject_group: 艺术（物理组）
+      batch: 艺术本科批文化成绩最低控制分数线
+      score: 301
+    - category: 艺术类
+      subject_group: 音乐表演（声乐）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 229
+    - category: 艺术类
+      subject_group: 音乐教育（声乐主项）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 217
+    - category: 艺术类
+      subject_group: 音乐表演（器乐）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 243
+    - category: 艺术类
+      subject_group: 音乐教育（器乐主项）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 231
+    - category: 艺术类
+      subject_group: 表（导）演类（戏剧影视表演）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 240
+    - category: 艺术类
+      subject_group: 表（导）演类（戏剧影视导演）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 242
+    - category: 艺术类
+      subject_group: 表（导）演类（服装表演）
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 220
+    - category: 艺术类
+      subject_group: 播音与主持类
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 231
+    - category: 艺术类
+      subject_group: 美术与设计类
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 180
+    - category: 艺术类
+      subject_group: 舞蹈类
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 180
+    - category: 艺术类
+      subject_group: 书法类
+      batch: 艺术本科批专业成绩最低控制分数线
+      score: 233
+    - category: 体育类
+      subject_group: 体育（历史组）
+      batch: 体育本科批文化成绩最低控制分数线
+      score: 327
+    - category: 体育类
+      subject_group: 体育（物理组）
+      batch: 体育本科批文化成绩最低控制分数线
+      score: 321
+    - category: 体育类
+      subject_group: 体育类
+      batch: 体育本科批专业成绩最低控制分数线
+      score: 85
+  notes: 公告为本科阶段控制线。控制线仅解决达线门槛，不构成录取承诺；专科控制线、艺术体育专科线、专项资格、专业成绩和单科/体检/语种等要求仍必须按后续官方公告、2026 招生计划和高校招生章程核验。
+
+one_score_one_rank:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "山西招生考试网"
+  source_url: "http://www.sxkszx.cn/news/20141120/20141120.html"
+  notes: 已核验考试公告列表，但尚未找到并读取 2026 普通高考文化成绩一分一段/分段统计表原始公告或附件。量化冲稳保前必须取得对应考生类别、首选科目和分数段/位次数据；不得用控制线或 2025 位次替代。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: "山西省2026年普通高校招生网上填报志愿时间安排公告"
+  source_url: "http://www.sxkszx.cn/news/2026622/n1891127206.html"
+  mode: 山西 2026 普通高校招生采用“3+1+2”模式，录取分本科、专科（高职）两个阶段，按类别分批次进行，采用院校专业组方式设置志愿；考生选考科目须符合所报院校专业组要求。普通类本科提前批 A/C 段和普通专科提前批等实行非平行志愿，普通本科提前批 B 段、普通本科批平行志愿栏、普通专科（高职）批，以及艺术本科批、艺术专科批、体育本科/专科批等实行平行志愿。
+  confirmation: 考生必须登录“山西招生考试网”，通过“考生登录”进入“2026年普通高考考生网上服务平台”填报；志愿信息填报确认提交后，在本阶段网上填报志愿结束前要重新登录系统回看并检查，若有错误需修改后重新提交。志愿填报确认后任何人不得改动。官方提醒不要通过搜索引擎误入非官网系统。
+  periods:
+    - name: 第一段志愿填报
+      starts_at: "2026-06-27 08:00"
+      ends_at: "2026-06-28 18:00"
+      scope: 艺术本科提前批、普通本科提前批（A、B、C段）
+    - name: 第二段志愿填报
+      starts_at: "2026-07-02 08:00"
+      ends_at: "2026-07-07 18:00"
+      scope: 艺术本科批、体育本科批、普通本科批
+    - name: 第三段志愿填报
+      starts_at: "2026-07-18 08:00"
+      ends_at: "2026-07-19 18:00"
+      scope: 艺术专科（高职）提前批、普通专科（高职）提前批
+    - name: 第四段志愿填报
+      starts_at: "2026-07-25 08:00"
+      ends_at: "2026-07-26 18:00"
+      scope: 艺术专科（高职）批、体育专科（高职）批、普通专科（高职）批
+  notes: 山西 2026 招生工作规定明确，普通本科提前批 A 段 3 个院校专业组志愿、每组 6 个专业及是否服从调剂；B 段 45 个院校专业组平行志愿、每组 6 个专业及是否服从调剂；C 段 3 个院校专业组志愿、每组 6 个专业及是否服从调剂。普通本科批高水平运动队单志愿栏 1 个院校专业组，预科班单志愿栏调整为 7 个并采取平行志愿录取，平行志愿栏 45 个院校专业组、每组 6 个专业及是否服从调剂。普通专科提前批 3 个院校专业组志愿，普通专科批 45 个院校专业组平行志愿；艺术、体育各批次志愿数量和规则须按招生工作规定原文核验。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-05-29"
+  last_checked_at: "2026-06-25"
+  source_title: "山西省2026年普通高校招生工作规定"
+  source_url: "http://www.sxkszx.cn/news/2026529/n7284127182.html"
+  notes: 招生工作规定写明，考生填报院校专业组志愿必须严格按照《山西省2026年全国普通高校招生填报志愿指南》公布的院校代号、院校名称、专业组号、专业代号、专业名称，于规定时间在网上准确填报；省招生考试管理中心负责汇总并公布高校在山西分专业招生计划和有关招生章程主要内容或章程网址。生成候选池前必须读取 2026 官方填报志愿指南/招生计划具体条目及更正，不能用院校库、排名库、院校官网专业页或历史计划替代。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "山西招生考试网考试公告"
+  source_url: "http://www.sxkszx.cn/news/20141120/20141120.html"
+  notes: 持续追踪招生计划更正、增补、取消、替换、代码变化和计划人数变化；若《山西省2026年全国普通高校招生填报志愿指南》、志愿系统、后续更正公告和高校官网不一致，以山西 2026 官方招生计划及更正为候选池最高依据。
+
+systems:
+  - title: "山西招生考试网"
+    url: "http://www.sxkszx.cn/"
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: "山西招生考试网考试公告"
+    url: "http://www.sxkszx.cn/news/20141120/20141120.html"
+    source_type: provincial_exam_authority
+    status: official_notice_column
+    last_checked_at: "2026-06-25"
+  - title: "2026年普通高考考生网上服务平台"
+    url: "http://www.sxkszx.cn/"
+    source_type: official_score_and_filing_system_entry
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: "山西省2026年高考成绩查询方式"
+    url: "http://www.sxkszx.cn/news/2026624/n2371127209.html"
+    source_type: provincial_exam_authority
+    status: official_2026_score_notice
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: "山西省2026年普通高校招生本科录取最低控制分数线公告"
+    url: "http://www.sxkszx.cn/news/2026625/n4845127211.html"
+    source_type: provincial_exam_authority
+    status: official_2026_control_lines_and_score_review
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: "山西省2026年普通高校招生网上填报志愿时间安排公告"
+    url: "http://www.sxkszx.cn/news/2026622/n1891127206.html"
+    source_type: provincial_exam_authority
+    status: official_2026_volunteer_schedule
+    published_at: "2026-06-22"
+    last_checked_at: "2026-06-25"
+  - title: "山西省2026年普通高校招生工作规定"
+    url: "http://www.sxkszx.cn/news/2026529/n7284127182.html"
+    source_type: provincial_exam_authority
+    status: official_2026_policy
+    published_at: "2026-05-29"
+    last_checked_at: "2026-06-25"
+  - title: "山西招生考试网考试公告"
+    url: "http://www.sxkszx.cn/news/20141120/20141120.html"
+    source_type: provincial_exam_authority
+    status: official_notice_column
+    published_at:
+    last_checked_at: "2026-06-25"

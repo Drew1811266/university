@@ -1,6 +1,8 @@
 # university skill
 
-`university` 是一个面向高校信息研究、官方来源核验和咨询报告生成的通用 AI skill。它的目标不是简单复述学校宣传材料，而是帮助使用者在“学校背景”和“招生政策”等不同信息类型之间划清边界，用可追溯的官方来源组织出稳妥、结构化的回答。
+当前版本：`0.2.0`
+
+`university` 是一个面向高校信息研究、官方来源核验和咨询报告生成的通用 AI skill。0.2 版将中国大陆 2026 高考志愿场景调整为“官方来源追踪、招生计划导入辅助、候选池过滤、防错清单、五维风险拆解、待核验项列表”，默认输出为 `研究草稿` 或 `核验草案`，不以生成可直接提交的志愿表为目标。
 
 ## 跨平台定位
 
@@ -47,7 +49,7 @@ skill 内置报告结构和证据记录规则，可输出短问答、单校报�
 
 ## 资源文件结构
 
-跨平台核心入口是 `SKILL.md`，其中定义了触发范围、工作流、来源规则和 reference 文件读取条件。`README.md` 只用于人类阅读，不替代 `SKILL.md`。
+跨平台核心入口是 `university/SKILL.md`，其中定义了触发范围、工作流、来源规则和 reference 文件读取条件。仓库根目录 `README.md` 只用于人类阅读，不属于 skill 包运行入口。
 
 主要 reference 文件包括：
 
@@ -59,8 +61,11 @@ skill 内置报告结构和证据记录规则，可输出短问答、单校报�
 - `references/report-schema.md`：报告、表格和轻量问答格式。
 - `references/research-workflow.md`：详细研究流程和不确定性处理。
 - `references/country-source-guide.md`：不同国家和地区的官方来源类型。
-- `references/china-gaokao-volunteer-guide.md`：中国大陆高考志愿填报核验规则。
-- `references/china-provincial-exam-authority-index.md`：中国省级考试院来源索引。
+- `references/resource-map.md`：按任务选择最小 reference 集合。
+- `references/gaokao-cn-workflow.md`、`references/gaokao-cn-output-status.md`、`references/gaokao-cn-source-authority.md`：中国大陆 2026 高考志愿工作流、输出状态和字段级来源权威规则。
+- `references/gaokao-cn-province-*-2026.yaml`：31 个省级 2026 高考状态包。
+- `references/gaokao-cn-candidate-pool.md`、`references/gaokao-cn-risk-method.md`：候选池过滤和五维风险拆解。
+- `references/gaokao-cn-submission-gates.md`、`references/gaokao-cn-submission-precheck-package.md`：防越权检查，不用于证明可提交。
 - `references/china-gaokao-overseas-study-guide.md`：高考生海外本科申请咨询规则。
 - `references/overseas-official-source-map.md`：海外教育、签证、认证、安全等官方来源地图。
 - `references/consultation-intake-profile.md`：咨询式任务的信息收集模板。
@@ -109,7 +114,9 @@ skill 内置报告结构和证据记录规则，可输出短问答、单校报�
 
 ## 当前覆盖情况
 
-中国高校资源库按软科 2026 中国大学排名主榜分段，已覆盖第 1-400 名。第 1-50 名已完成 A 级来源升级；后续分段仍有 B/C 级条目，需要继续逐校补充精确简介/概况页。
+中国高校资源库按软科 2026 中国大学排名主榜分段，已覆盖第 1-400 名。院校库只用于学校背景摘要，不参与高考候选池生成、排序或录取风险判断。
+
+高考 2026 省份包已覆盖 31 个省级单位，但当前仍定位为研究和核验辅助；缺少全量专业级招生计划、考生位次、选科资格或高校章程限制时，输出必须保持 `研究草稿`。
 
 国际院校资源库目前是扩展入口，实际查询海外大学时仍应优先使用该国家或地区的官方大学、项目、签证、质量保障和学历认证来源。
 

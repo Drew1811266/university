@@ -1,0 +1,4 @@
+province,year,batch,subject_category,institution_code,institution_name,major_group_code,major_code,major_name,minimum_score,minimum_rank,plan_count,source_file,source_url,field_evidence_level,comparability_status,continuity_status,change_flags,comparability_notes
+广东,2025,本科批,物理类,10001,示例大学,201,01,计算机类,590,34000,5,官方历史投档线样例,https://example.edu/history-2025.pdf,official_historical,comparable,stable,,同省同批次同科类同专业组样例
+广东,2024,本科批,物理类,10001,示例大学,201,01,计算机类,588,36000,5,官方历史投档线样例,https://example.edu/history-2024.pdf,official_historical,comparable,stable,,同省同批次同科类同专业组样例
+广东,2025,本科批,物理类,10002,样例学院,202,02,数据科学与大数据技术,570,52000,2,官方历史投档线样例,https://example.edu/history-2025.pdf,official_historical,not_comparable,changed,project_type_changed,项目性质或专业组结构变化样例

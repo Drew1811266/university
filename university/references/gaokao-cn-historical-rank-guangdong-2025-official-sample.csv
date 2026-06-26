@@ -1,0 +1,7 @@
+province,year,batch,subject_category,institution_code,institution_name,major_group_code,major_code,major_name,minimum_score,minimum_rank,plan_count,source_file,source_url,field_evidence_level,comparability_status,continuity_status,change_flags,comparability_notes
+广东,2025,本科批,历史类,10001,北京大学,205,,,669,28,24,广东省2025年本科普通类（历史）投档情况,https://eea.gd.gov.cn/attachment/0/585/585885/4746781.pdf,official_historical,comparable,stable,,官方2025本科普通类历史投档PDF；同口径使用时仍需核验2026专业组连续性
+广东,2025,本科批,历史类,10002,中国人民大学,205,,,655,148,56,广东省2025年本科普通类（历史）投档情况,https://eea.gd.gov.cn/attachment/0/585/585885/4746781.pdf,official_historical,comparable,stable,,官方2025本科普通类历史投档PDF；同口径使用时仍需核验2026专业组连续性
+广东,2025,本科批,历史类,10003,清华大学,203,,,675,13,4,广东省2025年本科普通类（历史）投档情况,https://eea.gd.gov.cn/attachment/0/585/585885/4746781.pdf,official_historical,comparable,stable,,官方2025本科普通类历史投档PDF；同口径使用时仍需核验2026专业组连续性
+广东,2025,本科批,物理类,10001,北京大学,206,,,689,99,34,广东省2025年本科普通类（物理）投档情况,https://eea.gd.gov.cn/attachment/0/585/585886/4746781.pdf,official_historical,comparable,stable,,官方2025本科普通类物理投档PDF；同口径使用时仍需核验2026专业组连续性
+广东,2025,本科批,物理类,10002,中国人民大学,206,,,679,388,3,广东省2025年本科普通类（物理）投档情况,https://eea.gd.gov.cn/attachment/0/585/585886/4746781.pdf,official_historical,comparable,stable,,官方2025本科普通类物理投档PDF；同口径使用时仍需核验2026专业组连续性
+广东,2025,本科批,物理类,10003,清华大学,204,,,688,118,67,广东省2025年本科普通类（物理）投档情况,https://eea.gd.gov.cn/attachment/0/585/585886/4746781.pdf,official_historical,comparable,stable,,官方2025本科普通类物理投档PDF；同口径使用时仍需核验2026专业组连续性

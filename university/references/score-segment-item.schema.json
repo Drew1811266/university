@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "score-segment-item.schema.json",
+  "title": "Gaokao Score Segment Item",
+  "type": "object",
+  "required": [
+    "province",
+    "year",
+    "subject_category",
+    "score_label",
+    "score_min",
+    "segment_count",
+    "cumulative_count",
+    "source_title",
+    "source_url",
+    "field_evidence_level"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "province": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 2020, "maximum": 2026 },
+    "subject_category": { "type": "string", "minLength": 1 },
+    "score_label": { "type": "string", "minLength": 1 },
+    "score_min": { "type": "integer", "minimum": 0 },
+    "score_max": { "type": ["integer", "null"], "minimum": 0 },
+    "segment_count": { "type": "integer", "minimum": 0 },
+    "cumulative_count": { "type": "integer", "minimum": 0 },
+    "source_title": { "type": "string", "minLength": 1 },
+    "source_url": { "type": "string", "format": "uri" },
+    "source_published_at": { "type": ["string", "null"], "format": "date" },
+    "retrieved_at": { "type": ["string", "null"], "format": "date" },
+    "field_evidence_level": {
+      "type": "string",
+      "enum": ["official_current", "official_historical", "official_entry_only", "user_supplied", "third_party_lead", "missing"]
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  }
+}

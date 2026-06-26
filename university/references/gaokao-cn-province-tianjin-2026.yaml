@@ -1,0 +1,144 @@
+# Template for `references/gaokao-cn-province-{slug}-2026.yaml`.
+# Replace placeholders with verified official-source data. Keep unknown fields as
+# `needs_recheck`, `not_released`, or `unknown`; do not infer missing dates.
+
+province: "天津"
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: "天津市2026年普通高考成绩今日19时公布"
+  source_url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009894.shtml"
+  notes: 2026 年天津市普通高考及高中学业水平等级性考试成绩自 2026-06-23 19:00 起查询；可通过招考资讯网、支付宝或微信小程序“天津招考”、国家政务服务平台、津心办、建设手机银行或 EMS 成绩单查询/接收。涉及高考成绩查询账号、手机号等敏感信息时必须提醒用户只在官方系统输入。
+
+score_review:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: "天津市2026年普通高考成绩今日19时公布"
+  source_url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009894.shtml"
+  notes: 复核申请时间为 2026-06-24 09:00 至 2026-06-25 17:00；考生须登录招考资讯网，通过本人高考成绩查询账号进入成绩复核系统申请并缴费；复核结果 2026-06-27 通过成绩查询系统反馈。
+
+control_lines:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: "2026年天津市普通高考本科录取控制分数线确定（附答记者问）"
+  source_url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009893.shtml"
+  items:
+    - category: 普通类
+      batch: 普通本科
+      score: 458
+    - category: 特殊类型资格考生
+      batch: 最低录取控制参考线
+      score: 547
+    - category: 艺考类（不含舞蹈类、戏曲类）
+      batch: 本科文化课
+      score: 343
+    - category: 艺考类（舞蹈类）
+      batch: 本科文化课
+      score: 297
+    - category: 艺考类（戏曲类）
+      batch: 本科文化课
+      score: 229
+    - category: 体育类
+      batch: 本科文化课
+      score: 407
+  notes: 普通本科和特殊类型参考线见 2026-06-23 本科控制线公告；艺考类、体育类本科文化课控制线见同日专项公告。专科控制线、其他类别如有后续公告仍需继续核验。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: "2026年天津市普通高考本科录取控制分数线确定（附答记者问）"
+  source_url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009893.shtml"
+  notes: 公告附件提供《2026年高考总成绩分数段统计情况》PDF（http://www.zhaokao.net/gkck/doc/003/000/115/00300011511_809a8ff0.pdf）。量化冲稳保前必须读取附件或官方辅助系统中的具体分段/位次数据；不得只用分数判断。
+
+volunteer_filling:
+  status: partial
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: "市招委关于做好2026年天津市普通高考志愿填报工作的通知"
+  source_url: "http://www.zhaokao.net/zwgk/system/2026/06/22/030009870.shtml"
+  mode: 具体志愿设置、批次、志愿数量和确认规则在官方 PDF 通知中；当前环境已核验 PDF 跳转链接，但未解析 PDF 文本，不能声称志愿设置完整。
+  confirmation:
+  periods:
+    - name: 本科提前批次（含 A、B 阶段）以及艺考类、体育类本科志愿
+      starts_at: "2026-06-25 09:00"
+      ends_at: "2026-06-27 12:00"
+      scope: 本科提前批次、艺考类本科、体育类本科
+    - name: 普通本科批次（含 A、B 阶段）
+      starts_at: "2026-06-25 09:00"
+      ends_at: "2026-06-29 17:00"
+      scope: 普通本科批次
+  notes: 本科填报时间来自市考试院本科控制线公告和艺体控制线公告；完整志愿工作通知为 PDF（http://www.zhaokao.net/gkck/doc/003/000/115/00300011507_d98f9cd2.pdf），核验草案必须读取 PDF 或官方填报系统规则，补齐普通高职（专科）等批次、志愿数量和确认规则。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: "2026年普通高等学校在津招生计划"
+  source_url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009884.shtml"
+  notes: 官方页面提供二维码查看 2026 年普通高等学校在津招生计划；本科控制线公告还要求研读市招考院编撰《2026年普通高等学校在津招生计划》《2024-2025普通高校在津招生录取统计资料》和《2026年高考志愿填报指南》电子书等官方资料。生成候选池仍必须读取具体招生计划条目及后续更正。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: "天津市教育招生考试院/招考资讯网"
+  source_url: "http://www.zhaokao.net/"
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: "天津市教育招生考试院/招考资讯网"
+    url: "http://www.zhaokao.net/"
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: "天津市新高考志愿辅助系统"
+    url: "https://zyfz.zhaokao.net"
+    source_type: official_assistance_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+  - title: "天津市普通高考志愿网上填报系统"
+    url: "https://zytb.zhaokao.net"
+    source_type: official_filing_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: "天津市2026年普通高考成绩今日19时公布"
+    url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009894.shtml"
+    source_type: provincial_exam_authority
+    status: official_2026_notice
+    published_at: "2026-06-23"
+    last_checked_at: "2026-06-25"
+  - title: "2026年天津市普通高考本科录取控制分数线确定（附答记者问）"
+    url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009893.shtml"
+    source_type: provincial_exam_authority
+    status: official_2026_notice
+    published_at: "2026-06-23"
+    last_checked_at: "2026-06-25"
+  - title: "我市2026年普通高考艺考类体育类本科批次文化课录取控制分数线确定"
+    url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009895.shtml"
+    source_type: provincial_exam_authority
+    status: official_2026_notice
+    published_at: "2026-06-23"
+    last_checked_at: "2026-06-25"
+  - title: "市招委关于做好2026年天津市普通高考志愿填报工作的通知"
+    url: "http://www.zhaokao.net/zwgk/system/2026/06/22/030009870.shtml"
+    source_type: provincial_exam_authority
+    status: official_2026_policy_pdf_redirect
+    published_at: "2026-06-22"
+    last_checked_at: "2026-06-25"
+  - title: "2026年普通高等学校在津招生计划"
+    url: "http://www.zhaokao.net/zkzx/system/2026/06/23/030009884.shtml"
+    source_type: provincial_exam_authority
+    status: official_2026_enrollment_plan_entry
+    published_at: "2026-06-23"
+    last_checked_at: "2026-06-25"

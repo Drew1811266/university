@@ -1,0 +1,112 @@
+province: 浙江
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: expected
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 浙江省2026年普通高校招生网上填报志愿工作安排
+  source_url: https://www.zjzs.net/art/2026/6/13/art_45_12375.html
+  notes: 官方安排称 6月26日左右发布各类别分数线、一分一段表并提供成绩位次查询；当前仍需核验正式成绩发布公告。
+
+score_review:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 浙江省教育考试院
+  source_url: https://www.zjzs.net/
+  notes: 待核验 2026 成绩复核申请时间、方式和截止时间。
+
+control_lines:
+  status: expected
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 浙江省2026年普通高校招生网上填报志愿工作安排
+  source_url: https://www.zjzs.net/art/2026/6/13/art_45_12375.html
+  items: []
+  notes: 官方安排称 6月26日左右发布；未发布前不得写入分数线或据此生成最终填报结论。
+
+one_score_one_rank:
+  status: expected
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 浙江省2026年普通高校招生网上填报志愿工作安排
+  source_url: https://www.zjzs.net/art/2026/6/13/art_45_12375.html
+  notes: 官方安排称 6月26日左右发布一分一段表；正式使用前必须核验分段表附件和位次口径。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-13"
+  last_checked_at: "2026-06-25"
+  source_title: 浙江省2026年普通高校招生网上填报志愿工作安排
+  source_url: https://www.zjzs.net/art/2026/6/13/art_45_12375.html
+  mode: 网上填报
+  confirmation:
+  periods:
+    - name: 模拟填报
+      starts_at: "2026-06-12"
+      ends_at: "2026-06-18"
+      scope: 网上填报志愿模拟练习
+    - name: 第一轮集中填报
+      starts_at: "2026-06-29 08:30"
+      ends_at: "2026-06-30 17:30"
+      scope: 普通类提前录取、普通类第一段平行录取、艺术类、体育类、单独考试招生和各类特殊计划等
+    - name: 单独考试招生征求志愿
+      starts_at: "2026-07-08 08:30"
+      ends_at: "2026-07-08 17:30"
+      scope: 单独考试招生征求志愿
+    - name: 第二轮集中填报
+      starts_at: "2026-07-26 08:30"
+      ends_at: "2026-07-27 17:30"
+      scope: 普通类第二段、艺术类第二批第二段、体育类第二段平行志愿
+    - name: 征求志愿
+      starts_at: "2026-08-03 08:30"
+      ends_at: "2026-08-03 17:30"
+      scope: 普通类、艺术类、体育类征求志愿
+  notes: 志愿数量、具体批次和确认规则还需结合浙江省 2026 志愿填报百问百答、招生章程和系统提示核验。
+
+enrollment_plan:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 浙江2026年普通高等学校招生专业目录
+  source_url: https://www.zjzs.net/
+  notes: 必须使用 2026 官方招生专业目录及更正；当前只确认志愿填报时间安排，不能据此生成候选池。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 浙江省教育考试院
+  source_url: https://www.zjzs.net/
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 浙江省教育考试院
+    url: https://www.zjzs.net/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 浙江省教育考试院
+    url: https://www.zjzs.net/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 浙江省2026年普通高校招生网上填报志愿工作安排
+    url: https://www.zjzs.net/art/2026/6/13/art_45_12375.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-13"
+    last_checked_at: "2026-06-25"
+  - title: 浙江省2026年高考志愿填报百问百答
+    url: https://www.zjzs.net/art/2026/6/17/art_159_12390.html
+    source_type: provincial_exam_authority
+    status: needs_review
+    published_at: "2026-06-17"
+    last_checked_at: "2026-06-25"

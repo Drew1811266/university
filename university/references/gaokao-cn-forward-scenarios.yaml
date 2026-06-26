@@ -1,0 +1,59 @@
+scenarios:
+  - id: guangdong_2026_rank_but_missing_plan
+    title: 广东 2026 已出成绩和志愿时间但缺招生计划核验
+    input_summary:
+      province: 广东
+      year: 2026
+      subject_category: 物理
+      score: 520
+      rank: 100000
+      target_batch: 本科批
+    available_sources:
+      province_pack: references/gaokao-cn-province-guangdong-2026.yaml
+      enrollment_plan: missing
+      plan_corrections: monitor
+    expected:
+      output_status: 研究草稿
+      must_include:
+        - 缺少 2026 招生专业目录
+        - 缺少计划更正核验
+        - 不得生成可提交志愿表
+
+  - id: sichuan_2026_score_window_but_policy_incomplete
+    title: 四川 2026 成绩查询窗口期但志愿规则和计划仍待核验
+    input_summary:
+      province: 四川
+      year: 2026
+      subject_category: 物理
+      score: 560
+      rank:
+      target_batch: 本科批
+    available_sources:
+      province_pack: references/gaokao-cn-province-sichuan-2026.yaml
+      rank: missing
+      enrollment_plan: needs_recheck
+    expected:
+      output_status: 研究草稿
+      must_include:
+        - 需要补充位次
+        - 2026 志愿规则待核验
+        - 不得给具体冲稳保判断
+
+  - id: guangdong_2026_university_major_without_province_plan
+    title: 广东 2026 用户拿大学官网专业页要求加入志愿
+    input_summary:
+      province: 广东
+      year: 2026
+      subject_category: 历史
+      score: 500
+      rank: 45000
+      user_claim: 某大学官网有目标专业
+    available_sources:
+      university_major_page: present
+      province_enrollment_plan_item: missing
+    expected:
+      output_status: 研究草稿
+      must_include:
+        - 大学官网专业页不能替代广东 2026 招生计划
+        - 不得推荐该专业作为可填志愿
+        - 只能作为专业背景线索

@@ -1,0 +1,118 @@
+province: 上海
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: 市教育考试院负责人就上海市2026年普通高校招生录取工作答记者问
+  source_url: https://www.shmeea.edu.cn/page/08000/20260623/20378.html
+  notes: 官方答问确认 2026 统一高考成绩已公布且成绩查询通道已开通；不得要求或保存考生登录信息。
+
+score_review:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 上海市教育考试院/上海招考热线
+  source_url: https://www.shmeea.edu.cn/
+  notes: 待核验 2026 成绩复核申请时间、方式和截止时间。
+
+control_lines:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: 市教育考试院负责人就上海市2026年普通高校招生录取工作答记者问
+  source_url: https://www.shmeea.edu.cn/page/08000/20260623/20378.html
+  items:
+    - category: 本科录取控制分数线
+      batch: 本科
+      score: 403
+    - category: 特殊类型招生控制分数线
+      batch: 特殊类型
+      score: 504
+    - category: 艺术类本科文化控制分数线
+      batch: 本科
+      score: 302
+    - category: 舞蹈类、戏曲类本科文化控制分数线
+      batch: 本科
+      score: 220
+    - category: 体育类本科文化控制分数线
+      batch: 本科
+      score: 282
+  notes: 分数线用于资格边界判断；排序和风险评估仍需 2026 在沪招生计划、选考要求、位次和章程。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-23"
+  last_checked_at: "2026-06-25"
+  source_title: 上海市2026年普通高校招生本科阶段考生各类别成绩分布表
+  source_url: https://www.shmeea.edu.cn/page/02200/
+  notes: 秋季高考栏目显示本科阶段考生各类别成绩分布表已发布；使用前需打开具体页面或附件并保留上海 3+3 成绩分布口径。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-04-02"
+  last_checked_at: "2026-06-25"
+  source_title: 上海市2026年普通高等学校招生志愿填报与投档录取实施办法
+  source_url: https://www.shmeea.edu.cn/page/06300/20260402/20156.html
+  mode: 上海招考热线网上填报；本科普通批等采用院校专业组
+  confirmation:
+  periods: []
+  notes: 实施办法规定每个院校专业组志愿内设 4 个专业志愿且须选择是否服从专业调剂；具体填报日程需结合录取工作日程和批次提醒核验。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-17"
+  last_checked_at: "2026-06-25"
+  source_title: 关于《2026年上海市普通高等学校招生专业目录》一书发行的通知
+  source_url: https://www.shmeea.edu.cn/page/02200/
+  notes: 秋季高考栏目显示招生专业目录发行通知已发布；生成候选池前必须读取专业目录或官方电子计划及后续更正。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 上海市教育考试院/上海招考热线
+  source_url: https://www.shmeea.edu.cn/page/02200/
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 上海市教育考试院/上海招考热线
+    url: https://www.shmeea.edu.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 上海招考热线秋季高考栏目
+    url: https://www.shmeea.edu.cn/page/02200/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 上海招考热线秋季高考栏目
+    url: https://www.shmeea.edu.cn/page/02200/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 市教育考试院负责人就上海市2026年普通高校招生录取工作答记者问
+    url: https://www.shmeea.edu.cn/page/08000/20260623/20378.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-23"
+    last_checked_at: "2026-06-25"
+  - title: 上海市2026年普通高等学校招生志愿填报与投档录取实施办法
+    url: https://www.shmeea.edu.cn/page/06300/20260402/20156.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-04-02"
+    last_checked_at: "2026-06-25"
+  - title: 上海市2026年普通高等学校招生录取工作日程
+    url: https://www.shmeea.edu.cn/page/08000/20260609/20321.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-09"
+    last_checked_at: "2026-06-25"

@@ -1,0 +1,121 @@
+province: 湖南
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 湖南省2026年高考成绩发布预告
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260624_34011133.html
+  notes: 官方预告称 2026年6月25日15时发布成绩；查询须使用教育考试院、综合信息平台、潇湘高考等官方渠道。
+
+score_review:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 湖南省教育考试院
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/
+  notes: 待核验 2026 成绩复核申请时间、方式和截止时间。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 湖南省2026年普通高校招生录取控制分数线
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260625_34011553.html
+  items: []
+  notes: 页面以图片展示控制线，当前只记录发布状态；具体分数需人工或 OCR 读取原图后再入库。
+
+one_score_one_rank:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 湖南省教育考试院招考资讯
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/index.html
+  notes: 待核验 2026 一分一段表官方发布页或附件。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-16"
+  last_checked_at: "2026-06-25"
+  source_title: 湖南省2026年普通高校招生考试问答
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260616_34004507.html
+  mode: PC 端综合信息平台或潇湘高考 APP 网上填报
+  confirmation: 提交保存后通过“志愿查看”查看带防伪标识的正式志愿信息表
+  periods:
+    - name: 第一阶段
+      starts_at: "2026-06-26 08:00"
+      ends_at: "2026-06-27 17:00"
+      scope: 本科提前批（除艺术类平行组外）和本科批特殊类型中的中南大学综合评价录取
+    - name: 第二阶段
+      starts_at: "2026-06-28 08:00"
+      ends_at: "2026-07-01 17:00"
+      scope: 本科提前批艺术类平行组、本科批特殊类型中的高水平运动队、本科批普通志愿和专科提前批志愿
+    - name: 第三阶段
+      starts_at: "2026-08-01 08:00"
+      ends_at: "2026-08-03 17:00"
+      scope: 高职专科批志愿
+  notes: 普通类、体育类、艺术类平行志愿以院校专业组为单位；每个院校或院校专业组志愿下设 6 个专业志愿和 1 个专业服从志愿。具体批次数量仍需结合问答后续表格和招生计划核验。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-16"
+  last_checked_at: "2026-06-25"
+  source_title: 湖南省2026年普通高校招生考试问答
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260616_34004507.html
+  notes: 问答确认招生计划可通过综合信息平台、潇湘高考 APP 和《2026年湖南高考指南·高校招生计划》查询；仍需获取具体计划条目后才能生成候选池。
+
+plan_corrections:
+  status: corrected
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年普通高校招生计划信息变更及补充说明
+  source_url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260624_34011036.html
+  notes: 已发布招生计划变更与补充说明，包括取消招生、计划数调整、专业组调整等；旧计划条目必须按更正失效或替换。
+
+systems:
+  - title: 湖南省教育考试院招考资讯
+    url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/index.html
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 湖南省普通高校招生考试考生综合信息平台
+    url: https://ks.hneao.cn
+    source_type: official_system_entry
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 湖南省教育考试院招考资讯
+    url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/index.html
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 湖南省2026年高考成绩发布预告
+    url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260624_34011133.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 湖南省2026年普通高校招生录取控制分数线
+    url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260625_34011553.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 湖南省2026年普通高校招生考试问答
+    url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260616_34004507.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-16"
+    last_checked_at: "2026-06-25"
+  - title: 2026年普通高校招生计划信息变更及补充说明
+    url: https://jyt.hunan.gov.cn/jyt/sjyt/hnsjyksy/web/ksyzkzx/202606/t20260624_34011036.html
+    source_type: provincial_exam_authority
+    status: corrected
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"

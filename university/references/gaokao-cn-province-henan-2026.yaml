@@ -1,0 +1,125 @@
+province: 河南
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-26"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 河南省2026年普通高校招生考生指南（二）填报志愿和录取注意事项
+  source_url: https://gaokao.haedu.cn/501/552/2026/0624/155628.html
+  notes: 河南省教育考试院来源的考生指南说明高考成绩及批次录取控制分数线于 2026-06-25 向社会公布，并列出官网、考生服务平台、微信公众号、现场和豫事办等查询渠道。
+
+score_review:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 河南省2026年普通高校招生考生指南（二）填报志愿和录取注意事项
+  source_url: https://gaokao.haedu.cn/501/552/2026/0624/155628.html
+  deadline: "2026-06-27 18:00"
+  notes: 指南说明考生对成绩有疑问的，可于 2026-06-27 18:00 前持本人准考证、有效身份证件到报考所在报名点提交成绩复核申请；不得要求或保存考生证件号、密码等敏感信息。
+
+control_lines:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 2026年河南省普通高校招生录取控制分数线
+  source_url: https://gaokao.haedu.cn/501/552/2026/0624/155630.html
+  items: []
+  notes: 河南阳光高考信息平台页面标明来源为河南省教育考试院；页面主体为图片，结构化使用前必须人工抽取并核验分科类/批次字段。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: 2026年河南省普通高招分数段统计表
+  source_url: https://gaokao.haedu.cn/501/552/2026/0625/155639.html
+  notes: 河南阳光高考信息平台页面标明来源为河南省教育考试院，并链接历史类、物理类 PDF 分数段统计表；结构化使用前必须完整抽取并保留累计人数口径。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 河南省2026年普通高校招生考生指南（二）填报志愿和录取注意事项
+  source_url: https://gaokao.haedu.cn/501/552/2026/0624/155628.html
+  mode: 网上填报
+  confirmation: 截止期前允许有2次修改；截止后将无法更改
+  periods: []
+  notes: 指南列出三次集中填报时间、正式系统入口、批次志愿单位、专业调剂设置、普通本科批和普通高职（专科）批 1-48 个院校专业组平行志愿等规则；报告生成时仍需按考生批次摘录相应规则。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 河南省2026年普通高校招生考生指南（二）填报志愿和录取注意事项
+  source_url: https://gaokao.haedu.cn/501/552/2026/0624/155628.html
+  notes: 指南说明《招生考试之友》专业目录公布各批次各高校分专业招生计划、计划性质、选考科目要求和学费标准等；候选池仍需抽取全量专业目录或官方系统计划数据，不能用指南文字直接生成可提交志愿表。
+
+plan_corrections:
+  status: corrected
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-26"
+  source_title: 2026年招生计划补充说明
+  source_url: https://gaokao.haedu.cn/501/552/2026/0624/155624.html
+  notes: 河南阳光高考信息平台页面标明来源为河南省教育考试院；全量使用前必须解析补充说明涉及的新增、更正、替换和计划变化。
+
+systems:
+  - title: 河南省教育考试院
+    url: https://www.haeea.cn/
+    source_type: provincial_exam_authority
+    status: official_entry_link_check_limited
+    last_checked_at: "2026-06-26"
+  - title: 河南省2026年普通高等学校招生考试成绩查询
+    url: https://pzcj2026.haeea.cn/
+    source_type: official_system
+    status: needs_manual_recheck_ssl_hostname_mismatch
+    last_checked_at: "2026-06-26"
+  - title: 河南省教育考试院官网
+    url: https://news.haeea.cn:8168/
+    source_type: provincial_exam_authority
+    status: official_entry_link_check_limited
+    last_checked_at: "2026-06-26"
+  - title: 河南省普通高校招生考生服务平台
+    url: https://pzwb.haeea.cn/
+    source_type: official_system
+    status: published
+    last_checked_at: "2026-06-26"
+  - title: 河南省2026年普通高校招生志愿填报辅助系统
+    url: https://book.heao.com.cn/
+    source_type: official_auxiliary_system
+    status: published
+    last_checked_at: "2026-06-26"
+
+sources:
+  - title: 河南省教育考试院
+    url: https://www.haeea.cn/
+    source_type: provincial_exam_authority
+    status: official_entry_link_check_limited
+    published_at:
+    last_checked_at: "2026-06-26"
+  - title: 河南省2026年普通高校招生考生指南（二）填报志愿和录取注意事项
+    url: https://gaokao.haedu.cn/501/552/2026/0624/155628.html
+    source_type: provincial_exam_authority_affiliated_platform
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-26"
+  - title: 2026年河南省普通高校招生录取控制分数线
+    url: https://gaokao.haedu.cn/501/552/2026/0624/155630.html
+    source_type: provincial_exam_authority_affiliated_platform
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-26"
+  - title: 2026年河南省普通高招分数段统计表
+    url: https://gaokao.haedu.cn/501/552/2026/0625/155639.html
+    source_type: provincial_exam_authority_affiliated_platform
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: 2026年招生计划补充说明
+    url: https://gaokao.haedu.cn/501/552/2026/0624/155624.html
+    source_type: provincial_exam_authority_affiliated_platform
+    status: corrected
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-26"

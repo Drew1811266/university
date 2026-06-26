@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "province-cycle.schema.json",
+  "title": "Gaokao Province Cycle",
+  "type": "object",
+  "required": ["province", "year", "exam_type", "cycle_status", "last_checked_at", "sources"],
+  "additionalProperties": true,
+  "properties": {
+    "province": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "const": 2026 },
+    "exam_type": { "type": "string", "minLength": 1 },
+    "cycle_status": {
+      "type": "string",
+      "enum": ["not_started", "partial", "published", "corrected", "needs_recheck"]
+    },
+    "last_checked_at": { "type": "string", "format": "date" },
+    "result_release": { "$ref": "#/$defs/status_source" },
+    "score_review": { "$ref": "#/$defs/status_source" },
+    "control_lines": { "$ref": "#/$defs/status_source" },
+    "one_score_one_rank": { "$ref": "#/$defs/status_source" },
+    "volunteer_filling": { "$ref": "#/$defs/status_source" },
+    "enrollment_plan": { "$ref": "#/$defs/status_source" },
+    "plan_corrections": { "$ref": "#/$defs/status_source" },
+    "systems": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" },
+      "default": []
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source" },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "status_source": {
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": true,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["not_released", "expected", "published", "corrected", "monitor", "monitor_current", "none_found_current", "needs_recheck", "unknown"]
+        },
+        "published_at": { "type": ["string", "null"] },
+        "last_checked_at": { "type": ["string", "null"] },
+        "source_title": { "type": ["string", "null"] },
+        "source_url": { "type": ["string", "null"], "format": "uri" },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["title", "url", "source_type", "status"],
+      "additionalProperties": true,
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "source_type": { "type": "string", "minLength": 1 },
+        "status": { "type": "string", "minLength": 1 },
+        "published_at": { "type": ["string", "null"] },
+        "last_checked_at": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "official-data-source.schema.json",
+  "title": "Gaokao Official Data Source",
+  "type": "object",
+  "required": [
+    "id",
+    "province",
+    "year",
+    "data_type",
+    "status",
+    "coverage_level",
+    "candidate_pool_eligible",
+    "source_title",
+    "source_url",
+    "source_type",
+    "retrieved_at"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "province": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 2020, "maximum": 2026 },
+    "data_type": {
+      "type": "string",
+      "enum": [
+        "one_score_one_rank",
+        "enrollment_plan",
+        "enrollment_plan_summary",
+        "plan_correction",
+        "historical_rank",
+        "volunteer_filling",
+        "control_lines",
+        "score_release"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "sampled",
+        "full_extracted",
+        "source_verified_not_extracted",
+        "monitor_current",
+        "missing",
+        "stale"
+      ]
+    },
+    "coverage_level": {
+      "type": "string",
+      "enum": [
+        "sample_rows",
+        "school_level_summary",
+        "full_major_level",
+        "full_score_table",
+        "full_correction_notice",
+        "source_only"
+      ]
+    },
+    "candidate_pool_eligible": { "type": "boolean" },
+    "source_title": { "type": "string", "minLength": 1 },
+    "landing_url": { "type": ["string", "null"], "format": "uri" },
+    "source_url": { "type": "string", "format": "uri" },
+    "source_type": { "type": "string", "minLength": 1 },
+    "published_at": { "type": ["string", "null"] },
+    "retrieved_at": { "type": "string", "format": "date" },
+    "extraction_file": { "type": ["string", "null"] },
+    "notes": { "type": ["string", "null"] }
+  }
+}

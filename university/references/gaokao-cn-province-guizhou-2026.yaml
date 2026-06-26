@@ -1,0 +1,151 @@
+# Template for `references/gaokao-cn-province-{slug}-2026.yaml`.
+# Replace placeholders with verified official-source data. Keep unknown fields as
+# `needs_recheck`, `not_released`, or `unknown`; do not infer missing dates.
+
+province: "贵州"
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-26"
+
+result_release:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省招生考试院"
+  source_url: "http://zsksy.guizhou.gov.cn/"
+  notes: 待核验 2026 成绩发布时间和官方原始公告。
+
+score_review:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省招生考试院"
+  source_url: "http://zsksy.guizhou.gov.cn/"
+  notes: 待核验 2026 成绩复核申请时间、方式和截止时间。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省2026年高考录取控制分数线划定"
+  source_url: "http://zsksy.guizhou.gov.cn/tzgg/202606/t20260625_90554124.html"
+  items:
+    - category: 首选物理类
+      batch: 特殊类型录取资格线
+      score: 494
+    - category: 首选物理类
+      batch: 本科
+      score: 393
+    - category: 首选物理类
+      batch: 高职（专科）
+      score: 200
+    - category: 首选历史类
+      batch: 特殊类型录取资格线
+      score: 503
+    - category: 首选历史类
+      batch: 本科
+      score: 439
+    - category: 首选历史类
+      batch: 高职（专科）
+      score: 200
+  notes: 已核验省招生考试院 2026-06-25 分数线公告；此处先结构化普通类，艺术、体育、民汉双语专业民族语言口语测试资格线需按原文继续抽取。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省2026年高考各类别分数段统计表公布"
+  source_url: "http://zsksy.guizhou.gov.cn/tzgg/202606/t20260625_90557425.html"
+  notes: 官方公告提供普通类首选物理、首选历史及体育、艺术等分数段统计表 PDF；当前只核验发布页和附件入口，尚未完成 PDF 全表结构化抽取。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省2026年高考志愿填报指南"
+  source_url: "http://zsksy.guizhou.gov.cn/tzgg/202606/t20260624_90553090.html"
+  mode: 网上填报志愿；普通类按物理科目组合和历史科目组合分别投档录取，志愿形态包括院校顺序志愿和专业（类）平行志愿。
+  confirmation:
+  periods:
+    - name: 本科和高职（专科）各批次志愿填报
+      starts_at: "2026-06-28 00:00"
+      ends_at: "2026-07-02 18:00"
+      scope: 通过贵州省普通高校招生考试考生综合信息平台填报本科和高职（专科）各批次志愿
+  notes: 普通类本科批设置96个专业（类）平行志愿，高职（专科）批设置96个专业（类）平行志愿；提前批不同段设置院校顺序志愿或60个专业（类）平行志愿。平行志愿原则上不设服从专业调剂，院校顺序志愿以“1个院校+6个专业（类）”为1个志愿并设置是否服从专业调剂。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-04-14"
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省教育高质量发展委员会关于做好2026年普通高校招生工作的通知"
+  source_url: "http://zsksy.guizhou.gov.cn/ptgk/xgkzl/202604/t20260414_90003831.html"
+  notes: 招生工作通知明确省教育高质量发展委员会汇总并公布高校在贵州分专业招生计划和招生章程主要内容或章程网址；志愿填报指南引用《贵州省2026年高考高校招生专业目录》。当前未核验到可公开抽取的全量专业目录文件，不能生成最终候选池。
+
+plan_corrections:
+  status: monitor_current
+  published_at:
+  last_checked_at: "2026-06-26"
+  source_title: "贵州省招生考试院"
+  source_url: "http://zsksy.guizhou.gov.cn/"
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: "贵州省招生考试院"
+    url: "https://zsksy.guizhou.gov.cn/"
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-26"
+  - title: "贵州省普通高考-高考政策栏目"
+    url: "https://zsksy.guizhou.gov.cn/ptgk/xgkzl/"
+    source_type: provincial_exam_authority
+    status: official_policy_column
+    last_checked_at: "2026-06-26"
+  - title: "贵州省普通高考-体育艺术栏目"
+    url: "https://zsksy.guizhou.gov.cn/ptgk/tyys/"
+    source_type: provincial_exam_authority
+    status: official_special_category_column
+    last_checked_at: "2026-06-25"
+  - title: "贵州省普通高校招生考试考生综合信息平台"
+    url: "http://gkks.eaagz.org.cn"
+    source_type: official_system
+    status: official_entry
+    last_checked_at: "2026-06-26"
+
+sources:
+  - title: "贵州省教育高质量发展委员会关于做好2026年普通高校招生工作的通知"
+    url: "http://zsksy.guizhou.gov.cn/ptgk/xgkzl/202604/t20260414_90003831.html"
+    source_type: provincial_exam_authority
+    status: official_2026_policy
+    published_at: "2026-04-14"
+    last_checked_at: "2026-06-26"
+  - title: "贵州省普通高考-高考政策栏目"
+    url: "https://zsksy.guizhou.gov.cn/ptgk/xgkzl/"
+    source_type: provincial_exam_authority
+    status: official_policy_column
+    published_at:
+    last_checked_at: "2026-06-26"
+  - title: "贵州省普通高考-体育艺术栏目"
+    url: "https://zsksy.guizhou.gov.cn/ptgk/tyys/"
+    source_type: provincial_exam_authority
+    status: official_special_category_column
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: "贵州省2026年高考录取控制分数线划定"
+    url: "http://zsksy.guizhou.gov.cn/tzgg/202606/t20260625_90554124.html"
+    source_type: provincial_exam_authority
+    status: official_2026_control_lines
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: "贵州省2026年高考各类别分数段统计表公布"
+    url: "http://zsksy.guizhou.gov.cn/tzgg/202606/t20260625_90557425.html"
+    source_type: provincial_exam_authority
+    status: official_2026_score_segment_entry
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"
+  - title: "贵州省2026年高考志愿填报指南"
+    url: "http://zsksy.guizhou.gov.cn/tzgg/202606/t20260624_90553090.html"
+    source_type: provincial_exam_authority
+    status: official_2026_volunteer_rules
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-26"

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "historical-rank-item.schema.json",
+  "title": "Gaokao Historical Rank Item",
+  "type": "object",
+  "required": [
+    "province",
+    "year",
+    "batch",
+    "subject_category",
+    "institution_code",
+    "institution_name",
+    "minimum_rank",
+    "source_file",
+    "comparability_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "province": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "minimum": 2020, "maximum": 2026 },
+    "batch": { "type": "string", "minLength": 1 },
+    "subject_category": { "type": "string", "minLength": 1 },
+    "institution_code": { "type": "string", "minLength": 1 },
+    "institution_name": { "type": "string", "minLength": 1 },
+    "major_group_code": { "type": ["string", "null"] },
+    "major_code": { "type": ["string", "null"] },
+    "major_name": { "type": ["string", "null"] },
+    "campus": { "type": ["string", "null"] },
+    "project_type": { "type": ["string", "null"] },
+    "comparison_unit_key": { "type": ["string", "null"] },
+    "continuity_status": {
+      "type": "string",
+      "enum": ["stable", "changed", "new", "merged", "split", "unknown"]
+    },
+    "change_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["major_group_changed", "major_changed", "campus_changed", "project_type_changed", "plan_count_changed", "first_year", "unknown_change"]
+      },
+      "default": []
+    },
+    "minimum_score": { "type": ["integer", "null"] },
+    "minimum_rank": { "type": "integer", "minimum": 1 },
+    "plan_count": { "type": ["integer", "null"], "minimum": 0 },
+    "source_file": { "type": "string", "minLength": 1 },
+    "source_url": { "type": ["string", "null"], "format": "uri" },
+    "field_evidence_level": {
+      "type": "string",
+      "enum": ["official_current", "official_historical", "official_entry_only", "user_supplied", "third_party_lead", "missing"]
+    },
+    "comparability_status": {
+      "type": "string",
+      "enum": ["comparable", "partially_comparable", "not_comparable", "unknown"]
+    },
+    "comparability_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    }
+  }
+}

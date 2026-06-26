@@ -1,0 +1,101 @@
+province: 广东
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 高考志愿6月28日起填报
+  source_url: https://www.gz.gov.cn/zwfw/zxfw/jyfw7/content/post_10871271.html
+  notes: 广州市政府公开页面转述广东省2026年普通高校招生新闻发布会；作为样板来源，提交前仍需核验广东省教育考试院原始公告。
+
+score_review:
+  status: needs_recheck
+  last_checked_at: "2026-06-25"
+  source_title: 高考志愿6月28日起填报
+  source_url: https://www.gz.gov.cn/zwfw/zxfw/jyfw7/content/post_10871271.html
+  notes: 成绩复核规则需回到广东省教育考试院原始通知确认。
+
+control_lines:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 高考志愿6月28日起填报
+  source_url: https://www.gz.gov.cn/zwfw/zxfw/jyfw7/content/post_10871271.html
+  items:
+    - category: 普通类（历史）
+      batch: 本科
+      score: 440
+    - category: 普通类（物理）
+      batch: 本科
+      score: 425
+  notes: 分数线字段为新闻页可见信息；核验草案仍需回到省考试院原始发布复核。
+
+one_score_one_rank:
+  status: needs_recheck
+  last_checked_at: "2026-06-25"
+  source_title: 广东省教育考试院
+  source_url: https://eea.gd.gov.cn/
+  notes: 需要核验 2026 一分一段表的原始发布页或官方附件。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 高考志愿6月28日起填报
+  source_url: https://www.gz.gov.cn/zwfw/zxfw/jyfw7/content/post_10871271.html
+  mode: 网上填报
+  confirmation: 网上确认，不设现场签名确认环节
+  periods:
+    - name: 第一时段
+      starts_at: "2026-06-28 09:00"
+      ends_at: "2026-06-29 16:00"
+      scope: 提前批本科军队、武警、公安、司法、消防、飞行技术等院校专业组志愿，以及提前批专科定向培养军士、定向培养军士院校专业组志愿
+    - name: 第二时段
+      starts_at: "2026-06-29 19:00"
+      ends_at: "2026-07-04 16:00"
+      scope: 除第一时段外的其他所有批次、所有科类院校专业组志愿
+  notes: 志愿数量、批次细则和院校专业组数量需继续核验省考试院正式通知和填报指南。
+
+enrollment_plan:
+  status: needs_recheck
+  last_checked_at: "2026-06-25"
+  source_title: 广东省2026年普通高等学校招生专业目录
+  source_url: https://eea.gd.gov.cn/
+  notes: 必须使用 2026 官方招生专业目录及其更正，不能用院校库或排名库生成候选池。
+
+plan_corrections:
+  status: monitor
+  last_checked_at: "2026-06-25"
+  source_title: 广东省教育考试院
+  source_url: https://eea.gd.gov.cn/
+  notes: 需要持续追踪招生专业目录更正、增补、取消和替换关系。
+
+systems:
+  - title: 广东省普通高考志愿填报系统
+    url: https://pg.eeagd.edu.cn/ks
+    source_type: official_system
+    status: needs_recheck
+    last_checked_at: "2026-06-25"
+  - title: 广东省教育考试院
+    url: https://eea.gd.gov.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 高考志愿6月28日起填报
+    url: https://www.gz.gov.cn/zwfw/zxfw/jyfw7/content/post_10871271.html
+    source_type: government_public_page
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 广东省教育考试院
+    url: https://eea.gd.gov.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"

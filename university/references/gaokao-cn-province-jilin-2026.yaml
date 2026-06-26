@@ -1,0 +1,91 @@
+province: 吉林
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: partial
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 吉林省教育考试院普通高考栏目
+  source_url: https://www.jleea.com.cn/site1/ksxm_gdjyks/9942/page/1/
+  notes: 普通高考栏目提供“普通高考成绩查询”官方服务入口，并于2026-06-25发布成绩一分段表和最低控制分数线；成绩发布原始通知和查分开放时间仍需进一步核验。
+
+score_review:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 吉林省教育考试院
+  source_url: https://www.jleea.com.cn/
+  notes: 待核验2026成绩复核申请时间、方式和截止时间。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 吉林省2026年普通高考本、专科各科类录取最低控制分数线
+  source_url: https://www.jleea.com.cn/site1/ksxm_gdjyks/9942/page/1/
+  items: []
+  notes: 普通高考栏目确认该公告于2026-06-25 09:06:59发布；页面内容为动态渲染时，不得手动猜测分数线，提交前需读取原文或附件后补齐分科类/批次字段。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年吉林省高考成绩一分段表
+  source_url: https://www.jleea.com.cn/site1/ksxm_gdjyks/9942/page/1/
+  notes: 普通高考栏目确认该一分段表于2026-06-25 11:58:13发布；风险量化前必须读取一分一段表原文或附件，不得仅凭发布状态计算位次差。
+
+volunteer_filling:
+  status: partial
+  published_at: "2026-06-16"
+  last_checked_at: "2026-06-25"
+  source_title: 吉林省2026年普通高考志愿填报核心要点问答集锦
+  source_url: https://www.jleea.com.cn/site1/xiangqingye/202714/
+  mode: 网上填报
+  confirmation: 考生需登录吉林省普通高考考生服务平台，按要求准确录入院校专业组代码、专业代码，并确认是否服从调剂；正式确认细则和截止时间需核验填报通知。
+  periods: []
+  notes: 普通类提前批A、B段为顺序志愿且各设1个院校专业组志愿；普通类本科批设50个院校专业组平行志愿，专科批设40个院校专业组平行志愿。艺术类提前批A段设1个院校专业组志愿，本科批和专科批各设20个平行志愿；体育类本科批和专科批各设20个院校专业组平行志愿。填报时间表仍需核验正式通知。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-16"
+  last_checked_at: "2026-06-25"
+  source_title: 吉林省2026年普通高考志愿填报核心要点问答集锦
+  source_url: https://www.jleea.com.cn/site1/xiangqingye/202714/
+  notes: 官方问答说明当年报考资料以省教育考试院发布的《普通高校招生指南》（含电子版）为核心依据，内含院校、专业、选科要求、招生计划、学制、学费等信息；生成候选池前仍需读取具体招生计划和更正条目。
+
+plan_corrections:
+  status: corrected
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 2026普通高校在吉林省招生计划调整公告(第1号)
+  source_url: https://www.jleea.com.cn/site1/ksxm_gdjyks/9942/page/1/
+  notes: 普通高考栏目确认已发布招生计划调整公告第1号；候选池构建必须套用更正文件，旧计划条目需标记失效并记录替换关系。
+
+systems:
+  - title: 吉林省普通高考考生服务平台
+    url: https://gk.jleea.com.cn/
+    source_type: official_system
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 吉林省教育考试院
+    url: https://www.jleea.com.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 吉林省教育考试院普通高考栏目
+    url: https://www.jleea.com.cn/site1/ksxm_gdjyks/9942/page/1/
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 吉林省2026年普通高考志愿填报核心要点问答集锦
+    url: https://www.jleea.com.cn/site1/xiangqingye/202714/
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-16"
+    last_checked_at: "2026-06-25"

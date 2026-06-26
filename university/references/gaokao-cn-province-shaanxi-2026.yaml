@@ -1,0 +1,169 @@
+province: 陕西
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年陕西省高考志愿填报注意事项
+  source_url: https://www.sneea.cn/info/1027/17650.htm
+  notes: 6月25日12:00起通过短信、陕西省教育考试院门户网站、陕西招生考试信息网、支付宝和微信等渠道提供成绩及位次信息；不得要求或保存考生准考证号、身份证号、报名系统密码。
+
+score_review:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年陕西省高考志愿填报注意事项
+  source_url: https://www.sneea.cn/info/1027/17650.htm
+  notes: 考生如对成绩有异议，可于6月27日12:00前通过陕西省教育考试院门户网站或陕西招生考试信息网提交网上复核申请，逾期不受理。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 陕西省2026年普通高等学校招生录取最低控制分数线
+  source_url: https://www.sneea.cn/info/1027/17649.htm
+  items:
+    - category: 普通类（历史）
+      batch: 特殊类型招生
+      score: 462
+    - category: 普通类（物理）
+      batch: 特殊类型招生
+      score: 451
+    - category: 普通类（历史）
+      batch: 本科
+      score: 385
+    - category: 普通类（物理）
+      batch: 本科
+      score: 376
+    - category: 普通类（历史）
+      batch: 高职（专科）
+      score: 200
+    - category: 普通类（物理）
+      batch: 高职（专科）
+      score: 200
+    - category: 艺术类（历史）
+      batch: 本科
+      score: 289
+    - category: 艺术类（物理）
+      batch: 本科
+      score: 282
+    - category: 艺术类（历史）
+      batch: 高职（专科）
+      score: 140
+    - category: 艺术类（物理）
+      batch: 高职（专科）
+      score: 140
+    - category: 戏曲类（历史）
+      batch: 本科
+      score: 193
+    - category: 戏曲类（物理）
+      batch: 本科
+      score: 188
+    - category: 戏曲类（历史）
+      batch: 高职（专科）
+      score: 140
+    - category: 戏曲类（物理）
+      batch: 高职（专科）
+      score: 140
+    - category: 体育类（历史）
+      batch: 本科
+      score: 367
+      professional_score: 73
+    - category: 体育类（物理）
+      batch: 本科
+      score: 341
+      professional_score: 73
+    - category: 体育类（历史）
+      batch: 高职（专科）
+      score: 200
+      professional_score: 63
+    - category: 体育类（物理）
+      batch: 高职（专科）
+      score: 200
+      professional_score: 63
+    - category: 职教单招
+      batch: 本科
+      score: 355
+    - category: 职教单招
+      batch: 高职（专科）
+      score: 142
+  notes: 本科批次按招生计划数的约120%划定；最终填报仍需结合考生科类、位次、选科和招生计划。
+
+one_score_one_rank:
+  status: partial
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年陕西省高考志愿填报注意事项
+  source_url: https://www.sneea.cn/info/1027/17650.htm
+  notes: 官方说明成绩及位次信息已发布；公开一分一段表、附件或辅助系统字段仍需另行核验后才能用于冲稳保量化。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年陕西省高考志愿填报注意事项
+  source_url: https://www.sneea.cn/info/1027/17650.htm
+  mode: 网上填报
+  confirmation: 志愿提交后需确认；确认成功后不可更改。截止时已提交未确认的，系统按最后一次提交信息自动确认；未提交的视为放弃该阶段志愿填报。
+  periods:
+    - name: 第一阶段-本科提前批次和职教单招本科批次
+      starts_at: "2026-06-25 12:00"
+      ends_at: "2026-06-27 12:00"
+      scope: 本科提前批次、职教单招本科批次
+    - name: 第一阶段-本科批次
+      starts_at: "2026-06-25 12:00"
+      ends_at: "2026-06-30 12:00"
+      scope: 本科批次
+  notes: 第二阶段高职（专科）提前批次、职教单招高职（专科）批次、高职（专科）批次在本科批正式投档后或本科批录取结束后填报，具体时间需继续关注省教育考试院公告。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 省教育考试院关于志愿填报的温馨提醒
+  source_url: https://www.sneea.cn/info/1027/17651.htm
+  notes: 官方提示计划信息应通过陕西省教育考试院门户网站、陕西招生考试信息网、陕西省高考志愿辅助系统和《2026年普通高校在陕招生计划汇编》（物理类/历史类）等正规渠道获取；生成候选池仍必须读取具体计划条目及更正文件。
+
+plan_corrections:
+  status: monitor
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 省教育考试院关于志愿填报的温馨提醒
+  source_url: https://www.sneea.cn/info/1027/17651.htm
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化；一旦存在更正，旧计划条目必须标记失效并保留替换关系。
+
+systems:
+  - title: 陕西省教育考试院门户网站
+    url: https://www.sneea.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 陕西招生考试信息网
+    url: https://www.sneac.com/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 陕西省2026年普通高等学校招生录取最低控制分数线
+    url: https://www.sneea.cn/info/1027/17649.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 2026年陕西省高考志愿填报注意事项
+    url: https://www.sneea.cn/info/1027/17650.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 省教育考试院关于志愿填报的温馨提醒
+    url: https://www.sneea.cn/info/1027/17651.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"

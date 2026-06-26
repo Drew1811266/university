@@ -1,0 +1,149 @@
+province: 北京
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 北京市2026年普通高考成绩查询
+  source_url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88241.html
+  notes: 官方成绩查询入口已发布；不得要求或保存考生账号、密码、准考证号等敏感凭据。
+
+score_review:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 北京市2026年高考成绩复核
+  source_url: https://query.bjeea.cn/queryService/rest/gaokaofuhe/index
+  notes: 考试院高考栏目显示成绩复核截至 6月27日12:00；提交前需再次核验复核入口状态和截止时间。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 北京市2026年普通高等学校招生录取最低控制分数线
+  source_url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88239.html
+  items:
+    - category: 普通本科
+      batch: 本科
+      score: 429
+    - category: 特殊类型招生
+      batch: 特殊类型
+      score: 521
+    - category: 艺术类本科（不含舞蹈类、戏曲类）
+      batch: 本科
+      score: 322
+    - category: 舞蹈类、戏曲类本科
+      batch: 本科
+      score: 215
+    - category: 体育类本科
+      batch: 本科
+      score: 369
+    - category: 普通专科
+      batch: 专科
+      score: 120
+    - category: 艺术类专科
+      batch: 专科
+      score: 84
+    - category: 高职单招
+      batch: 高职单招
+      score: 120
+    - category: 高职单招艺术类
+      batch: 高职单招
+      score: 84
+  notes: 分数线只用于资格边界和批次判断，不能替代位次、招生计划和章程核验。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 北京市2026年高考考生分数分布
+  source_url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88238.html
+  notes: 使用前必须读取官方附件或页面表格，保留同分累计位次口径。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-15"
+  last_checked_at: "2026-06-25"
+  source_title: 北京市2026年普通高等学校招生志愿填报须知
+  source_url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0614/88216.html
+  mode: 网上填报
+  confirmation: 截止前完成信息提交；志愿填报时间截止后不得更改
+  periods:
+    - name: 本科志愿
+      starts_at: "2026-06-27 08:00"
+      ends_at: "2026-07-01 17:00"
+      applies_to: 统考考生填报本科提前批、特殊类型招生、本科普通批志愿；单考考生填报职教师资班和高职单考单招志愿
+    - name: 专科志愿
+      starts_at: "2026-07-24 08:00"
+      ends_at: "2026-07-25 17:00"
+      applies_to: 未被录取的统考考生填报专科提前批和专科普通批志愿
+  notes: 官方须知要求登录北京教育考试院网站填报；考生须按2026招生专业目录填报并参阅院校招生章程，符合选考科目、身体条件、专项资格等要求。
+
+enrollment_plan:
+  status: published
+  published_at: "2026-06-22"
+  last_checked_at: "2026-06-25"
+  source_title: 北京市2026年普通高等学校招生专业目录
+  source_url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0621/88227.html
+  notes: 候选池必须来自此目录及后续更正；学校官网专业页、排名库和院校背景库不得生成可填集合。
+
+plan_corrections:
+  status: none_found_current
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 北京教育考试院高考高招栏目
+  source_url: https://www.bjeea.cn/html/gkgz/
+  notes: 截至2026-06-25检查北京教育考试院高考高招通知公告，未发现2026招生专业目录更正公告；提交前仍须再次检查更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 北京教育考试院高考高招栏目
+    url: https://www.bjeea.cn/html/gkgz/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 北京市2026年普通高考成绩查询
+    url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88241.html
+    source_type: official_system_entry
+    status: published
+    last_checked_at: "2026-06-25"
+  - title: 北京市2026年高考成绩复核
+    url: https://query.bjeea.cn/queryService/rest/gaokaofuhe/index
+    source_type: official_system_entry
+    status: published
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 北京教育考试院高考高招栏目
+    url: https://www.bjeea.cn/html/gkgz/
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 北京市2026年普通高等学校招生录取最低控制分数线
+    url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88239.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 北京市2026年高考考生分数分布
+    url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0624/88238.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 北京市2026年普通高等学校招生专业目录
+    url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0621/88227.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-22"
+    last_checked_at: "2026-06-25"
+  - title: 北京市2026年普通高等学校招生志愿填报须知
+    url: https://www.bjeea.cn/html/gkgz/tzgg/2026/0614/88216.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-15"
+    last_checked_at: "2026-06-25"

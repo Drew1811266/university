@@ -1,0 +1,168 @@
+province: 广西
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-24"
+  last_checked_at: "2026-06-25"
+  source_title: 我区2026年高考成绩查询方式公布，预计考生可于6月25日14:00查询高考成绩
+  source_url: https://www.gxeea.cn/view/content_619_32870.htm
+  notes: 预计6月25日14:00起可通过广西招生考试院网站、短信、微信小程序、智桂通、桂教通等5种方式查询2026年高考成绩信息（含加分信息）；不得要求或保存报名序号、身份证号、手机验证码等敏感信息。
+
+score_review:
+  status: partial
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 广西2026年高考成绩查询、成绩复核及志愿填报期间咨询电话
+  source_url: https://www.gxeea.cn/view/content_619_32897.htm
+  notes: 官方已发布成绩查询、成绩复核及志愿填报期间咨询电话；成绩复核申请入口、申请时段、复核范围仍需读取正式复核说明后补齐。
+
+control_lines:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 广西2026年普通高校招生录取最低控制分数线公布
+  source_url: https://www.gxeea.cn/view/content_1013_32890.htm
+  items:
+    - category: 普通类（首选历史）
+      batch: 本科
+      score: 398
+    - category: 普通类（首选物理）
+      batch: 本科
+      score: 368
+    - category: 普通类（首选历史）
+      batch: 特殊类型招生
+      score: 520
+    - category: 普通类（首选物理）
+      batch: 特殊类型招生
+      score: 510
+    - category: 普通类（首选历史）
+      batch: 高职高专
+      score: 180
+    - category: 普通类（首选物理）
+      batch: 高职高专
+      score: 180
+    - category: 体育类（首选历史）
+      batch: 本科
+      score: 285
+      professional_score: 83
+    - category: 体育类（首选物理）
+      batch: 本科
+      score: 297
+      professional_score: 83
+    - category: 体育类（首选历史）
+      batch: 高职高专
+      score: 160
+      professional_score: 60
+    - category: 体育类（首选物理）
+      batch: 高职高专
+      score: 160
+      professional_score: 60
+    - category: 艺术类（首选历史）
+      batch: 本科文化
+      score: 299
+    - category: 艺术类（首选物理）
+      batch: 本科文化
+      score: 276
+    - category: 艺术类（首选历史）
+      batch: 高职高专文化
+      score: 126
+    - category: 艺术类（首选物理）
+      batch: 高职高专文化
+      score: 126
+  notes: 艺术类统考分数线按细分类另行记录或查原图；普通类和体育类字段已据广西招生考试院官方图片核验。
+
+one_score_one_rank:
+  status: published
+  published_at: "2026-06-25"
+  last_checked_at: "2026-06-25"
+  source_title: 2026年一分一档表
+  source_url: https://www.gxeea.cn/view/content_1013_32894.htm
+  notes: 官方页面跳转至2026年一分一档表专题；用于风险量化前必须读取考生对应首选科目和分数段数据，不得只凭发布状态判定冲稳保。
+
+volunteer_filling:
+  status: published
+  published_at: "2026-06-17"
+  last_checked_at: "2026-06-25"
+  source_title: 自治区招生考试院关于做好我区2026年普通高校招生统一考试志愿填报工作的通知
+  source_url: https://www.gxeea.cn/view/content_619_32854.htm
+  mode: 网上填报，分电脑端和手机端；电脑端唯一网站为广西招生考试院网站，手机端唯一App为“八桂高考”App。
+  confirmation: 志愿一经锁定或志愿填报时间截止，考生本人及任何其他单位或个人均不能更改、补填。
+  periods:
+    - name: 本科提前批和高职高专提前批
+      starts_at: "2026-06-25 15:00"
+      ends_at: "2026-06-29 10:00"
+      scope: 本科提前批、高职高专提前批
+    - name: 其他批次
+      starts_at: "2026-06-29 15:00"
+      ends_at: "2026-07-03 10:00"
+      scope: 其他批次
+  notes: 系统每天23:00至次日6:00为维护时间；征集志愿时间以广西招生考试院网站后续公告为准。
+
+enrollment_plan:
+  status: partial
+  published_at: "2026-06-17"
+  last_checked_at: "2026-06-25"
+  source_title: 自治区招生考试院关于做好我区2026年普通高校招生统一考试志愿填报工作的通知
+  source_url: https://www.gxeea.cn/view/content_619_32854.htm
+  notes: 考生可报考的院校专业组及其专业以高校当年在广西安排的招生计划为准；生成候选池仍需读取2026招生计划具体条目和后续更正。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 广西招生考试院
+  source_url: https://www.gxeea.cn/
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化；征集志愿和计划调整以广西招生考试院后续公告为准。
+
+systems:
+  - title: 广西招生考试院
+    url: https://www.gxeea.cn/
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 广西阳光志愿信息服务系统
+    url: https://www.gxeea.cn/
+    source_type: official_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+  - title: 八桂高考App
+    url: https://www.gxeea.cn/view/content_619_32854.htm
+    source_type: official_system
+    status: referenced_by_official_notice
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 我区2026年高考成绩查询方式公布，预计考生可于6月25日14:00查询高考成绩
+    url: https://www.gxeea.cn/view/content_619_32870.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-24"
+    last_checked_at: "2026-06-25"
+  - title: 广西2026年普通高校招生录取最低控制分数线公布
+    url: https://www.gxeea.cn/view/content_1013_32890.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 2026年一分一档表
+    url: https://www.gxeea.cn/view/content_1013_32894.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"
+  - title: 自治区招生考试院关于做好我区2026年普通高校招生统一考试志愿填报工作的通知
+    url: https://www.gxeea.cn/view/content_619_32854.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-17"
+    last_checked_at: "2026-06-25"
+  - title: 广西2026年高考成绩查询、成绩复核及志愿填报期间咨询电话
+    url: https://www.gxeea.cn/view/content_619_32897.htm
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-25"
+    last_checked_at: "2026-06-25"

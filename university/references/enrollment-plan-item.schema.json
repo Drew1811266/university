@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "enrollment-plan-item.schema.json",
+  "title": "Gaokao Enrollment Plan Item",
+  "type": "object",
+  "required": [
+    "province",
+    "year",
+    "batch",
+    "subject_category",
+    "institution_code",
+    "institution_name",
+    "major_name",
+    "plan_count",
+    "source_file"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "province": { "type": "string", "minLength": 1 },
+    "year": { "type": "integer", "const": 2026 },
+    "batch": { "type": "string", "minLength": 1 },
+    "subject_category": { "type": "string", "minLength": 1 },
+    "institution_code": { "type": "string", "minLength": 1 },
+    "institution_name": { "type": "string", "minLength": 1 },
+    "major_group_code": { "type": ["string", "null"] },
+    "major_code": { "type": ["string", "null"] },
+    "major_name": { "type": "string", "minLength": 1 },
+    "plan_count": { "type": "integer", "minimum": 0 },
+    "selected_subject_requirements": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "tuition": { "type": ["integer", "string", "null"] },
+    "campus": { "type": ["string", "null"] },
+    "project_type": { "type": ["string", "null"] },
+    "remarks": { "type": ["string", "null"] },
+    "source_file": { "type": "string", "minLength": 1 },
+    "source_title": { "type": ["string", "null"] },
+    "source_type": {
+      "type": ["string", "null"],
+      "enum": ["provincial_enrollment_plan", "provincial_plan_correction", "official_auxiliary_system", "official_publication", "user_upload", null]
+    },
+    "source_locator": { "type": ["string", "null"] },
+    "source_published_at": { "type": ["string", "null"] },
+    "source_url": { "type": ["string", "null"], "format": "uri" },
+    "retrieved_at": { "type": ["string", "null"], "format": "date" },
+    "field_evidence_level": {
+      "type": ["string", "null"],
+      "enum": ["official_current", "official_entry_only", "user_supplied", "third_party_lead", "missing", null]
+    },
+    "coverage_level": {
+      "type": ["string", "null"],
+      "enum": ["full_major_level", "sample_rows", "school_level_summary", "source_only", null]
+    },
+    "candidate_pool_eligible": { "type": ["boolean", "null"] },
+    "evidence_id": { "type": ["string", "null"] },
+    "is_corrected": { "type": "boolean", "default": false },
+    "correction_status": {
+      "type": "string",
+      "enum": ["active", "replaced", "cancelled", "added", "corrected", "unknown"],
+      "default": "unknown"
+    },
+    "replaces": { "type": ["string", "null"] },
+    "replaced_by": { "type": ["string", "null"] }
+  }
+}

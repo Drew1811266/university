@@ -1,0 +1,95 @@
+province: 湖北
+year: 2026
+exam_type: 普通高考
+cycle_status: partial
+last_checked_at: "2026-06-25"
+
+result_release:
+  status: published
+  published_at: "2026-06-20"
+  last_checked_at: "2026-06-25"
+  source_title: 湖北省2026年普通高考成绩公布时间及复核办法
+  source_url: https://www.hbea.edu.cn/html/2026-06/15955.html
+  notes: 官方公告称 2026年6月25日8:00公布成绩；查询可通过湖北省教育考试院、省教育厅、政务服务网等官方渠道。
+
+score_review:
+  status: published
+  published_at: "2026-06-20"
+  last_checked_at: "2026-06-25"
+  source_title: 湖北省2026年普通高考成绩公布时间及复核办法
+  source_url: https://www.hbea.edu.cn/html/2026-06/15955.html
+  notes: 复核申请时间为 2026年6月25日8:30至6月27日17:00；考生须到报名所在地教育考试机构申请。
+
+control_lines:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 湖北省教育考试院普通高考栏目
+  source_url: https://www.hbea.edu.cn/html/gaokao/index.html
+  items: []
+  notes: 待核验 2026 最低录取控制线原始公告和分科类/批次字段。
+
+one_score_one_rank:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 湖北省教育考试院普通高考栏目
+  source_url: https://www.hbea.edu.cn/html/gaokao/index.html
+  notes: 待核验 2026 一分一段表官方发布页或附件。
+
+volunteer_filling:
+  status: partial
+  published_at: "2026-06-20"
+  last_checked_at: "2026-06-25"
+  source_title: 湖北省2026年普通高考成绩公布时间及复核办法
+  source_url: https://www.hbea.edu.cn/html/2026-06/15955.html
+  mode: 湖北省招生数智综合平台志愿填报系统
+  confirmation:
+  periods:
+    - name: 第一次集中填报
+      starts_at: "2026-06-29 08:00"
+      ends_at: "2026-07-02 17:00"
+      scope: 以正式志愿填报通知和系统批次为准
+  notes: 公告只给出第一次集中填报时间和系统入口；批次、志愿数量、确认方式、征集安排需继续核验正式志愿填报文件。
+
+enrollment_plan:
+  status: needs_recheck
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 湖北2026年普通高等学校招生专业目录
+  source_url: https://www.hbea.edu.cn/
+  notes: 必须使用 2026 官方招生专业目录及其更正，不能用院校库、排名库或大学官网专业页生成候选池。
+
+plan_corrections:
+  status: monitor
+  published_at:
+  last_checked_at: "2026-06-25"
+  source_title: 湖北省教育考试院普通高考栏目
+  source_url: https://www.hbea.edu.cn/html/gaokao/index.html
+  notes: 持续追踪招生专业目录更正、增补、取消、替换、代码变化和计划人数变化。
+
+systems:
+  - title: 湖北省教育考试院普通高考栏目
+    url: https://www.hbea.edu.cn/html/gaokao/index.html
+    source_type: provincial_exam_authority
+    status: official_entry
+    last_checked_at: "2026-06-25"
+  - title: 湖北省招生数智综合平台
+    url: http://zspt.hubzs.com.cn
+    source_type: official_system_entry
+    status: official_entry
+    last_checked_at: "2026-06-25"
+
+sources:
+  - title: 湖北省教育考试院普通高考栏目
+    url: https://www.hbea.edu.cn/html/gaokao/index.html
+    source_type: provincial_exam_authority
+    status: official_entry
+    published_at:
+    last_checked_at: "2026-06-25"
+  - title: 湖北省2026年普通高考成绩公布时间及复核办法
+    url: https://www.hbea.edu.cn/html/2026-06/15955.html
+    source_type: provincial_exam_authority
+    status: published
+    published_at: "2026-06-20"
+    last_checked_at: "2026-06-25"
